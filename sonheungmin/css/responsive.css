@@ -1,0 +1,121 @@
+@media screen and (max-width:1250px) {
+    .profile {
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+    .profile-image img {
+    width: 100%;
+    height: 50vh;
+    }
+    .compli {
+        width: 23%;
+    }
+}
+@media screen and (max-width:950px) {
+    #header {
+        padding: 6em 0 4em 0;
+    }
+    #header label[for="hicon"] {
+        display: block;
+    }
+    #header label[for="hicon"] span {
+        display: block;
+    }
+    #nav-bar {
+       width: 30%; 
+       position: absolute;
+       margin: 0;
+       top:0;
+       right:0%;
+       display: none;
+       opacity: 0.9;
+       z-index: 10;
+    }
+    #nav-bar .career-box {
+        opacity: 0;
+    }
+    #nav-bar .nav-box {
+        display: block;
+    }
+    .profile .title-box .title {
+        display: none;
+    }
+    .profile .title-box {
+        justify-content: center;
+    }
+    .compli {
+        display: block;
+        width: 93%;
+    }
+    .compli .item {
+        width: 100%;
+    }
+    .achievements .container {
+        width: 100%;
+    }
+    .trophy-box {
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    #header {
+        height: 100vh;
+    }
+    #header .h-container {
+        width: 100%;
+    }
+    #header .h-container span {
+        display: block;
+    }
+    .trophy-box {
+        flex-direction: column;
+        position: relative;
+    }
+    .trophy-box .box-title {
+        width: 50%;
+    }
+    .box-title h3 {
+        color:#fff;   
+        background: #000;
+        opacity: 0.7;
+        display: inline-block;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .box-title p {
+        display: none;
+    }
+    .career-box {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:430px) {
+    .profile {
+        position: relative;
+    }
+    .profile .title-box {
+        position: absolute;
+        bottom:0;
+        left: 0;
+        background: #000;
+        opacity: 0.5;
+    }
+    .title-box .title-2 {
+        color:#fff;
+        width: 100%;
+    }
+    .achievements .box {
+        font-size: 0.7rem;
+    }
+ .achievements .box li:hover { 
+    font-size: 0.7rem;
+    }
+    #nav-bar {
+        width: 100%; 
+        opacity: 0.8;
+        z-index: 10;
+     }
+}
