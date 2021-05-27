@@ -1,0 +1,775 @@
+
+/* ################################## Reset Css ####################### */
+    body{
+        margin: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color:#333;
+    }
+    ul{
+        list-style: none;
+    }
+    img{
+        max-width: 100%;
+    }
+/* ################################## Header ####################### */
+
+    #header{
+        width: 100%;
+        background: #f6f5ef;
+        height: 120px;
+        position: fixed;
+        z-index: 1000;
+    }
+    #header .nav-bar{
+        width: 1100px;
+        margin: 0 auto;
+        height: inherit;
+    }
+    /*trigger*/
+
+    #header .trigger{
+        position: absolute;
+        width: 40px;
+        height: 25px;
+        right:2%;
+        top:15%;
+        display: none;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .trigger span{
+        position: absolute;    
+        width: 100%;
+        height: 3px;
+        background: #000;
+        transition: 0.5s;
+    }
+    .trigger span:nth-child(1){
+        top:0;
+    }
+    .trigger span:nth-child(2){
+        top:50%;
+        width: 90%;
+    }
+    .trigger span:nth-child(3){
+        top:100%;
+    }
+    .trigger.active span{
+        background: crimson;
+    }
+    .trigger.active span:nth-child(1){
+        transform: rotate(45deg);
+        top:50%;
+    }
+    .trigger.active span:nth-child(2){
+        opacity: 0;
+    }
+    .trigger.active span:nth-child(3){
+        transform: rotate(-45deg);
+        top:50%;
+    }
+    .twotrigger{
+        display: block;
+        background: #fff;
+        width: 300px;
+        position: fixed;
+        top:0;
+        right: 0;
+        text-align: center;
+        display: none;
+        z-index: 1;
+    }
+    .trgmenu{
+        display: block;
+    }
+    .twotrigger h4{
+        border-bottom: 1px solid #999;
+        margin: 0;
+    }
+    .twotrigger h4 span{
+        color: #000;
+        margin: 0;
+        font-size: 1.3rem;
+        cursor: pointer;
+        font-weight: normal;
+        padding:1rem 0;
+        display: block;
+    }
+    .trgcontainer{
+        background: rgba(77, 68, 68, 0.637);
+        display: none;
+        margin-top: 1rem;
+    }
+    .trgsub .trgitem{
+        display: block;
+        margin-top: 1em;
+        display: none;
+    }
+    .trgcontainer a{
+        font-size: 1rem;
+        color:#fff;
+
+    }
+    .trgitem a{
+        display: block;
+        padding: 1.1em 0;
+        background: #111;
+        font-size: 1em;
+    }
+    .trgcontainer h5{
+        margin: 0;
+        border-bottom: 1px solid #fff;
+        padding: 1.5em 0;
+        color:#fff;
+        font-weight: normal;
+        cursor: pointer;
+
+    }
+    .trgsub > a{
+        display: block;
+        border-bottom: 1px solid #fff;
+    }
+    #header .nav-image img{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    #header .nav-box{
+        font-weight: bold;
+    }
+/* ################################## nav-one ( login-link ) ####################### */
+
+    #header .nav-one{
+        float: right;
+        margin: 0.5rem 0;
+        font-size: 0.8rem;
+    }
+    #header .nav-one a{
+        padding: 0rem 0.5rem;
+        border-right:1px solid #ddd;
+    }
+    #header .nav-one span{
+        background: #fff;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 5px;
+        border:1px solid #ddd;
+    }
+    #header .nav-one a:nth-child(4){
+        border:none;
+    }
+/* ################################## nav-two ( sub-menu )####################### */
+
+    #header .nav-two{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    #header .nav-two .main-menu > a{
+        display: inline-block;
+        height: 66px;
+        padding:0 0.7rem;
+        padding-top: 0.5rem;
+    }
+
+    #header .sub-container{
+        position: absolute;
+        top:100%;
+        left: 0;
+        width:100%;
+        box-sizing: border-box;
+        padding:1rem 0 15rem 0;
+        background: #2c2a29;
+        color:#669900;
+        display: none;
+        z-index: 1000;
+    }
+    #header .sub-container h5{
+        margin:0;
+        margin-bottom: 1rem;
+    }
+    #header .sub-container h5>a{
+        color:#fff;
+        font-size: 0.8rem;
+    }
+    #header .sub-container a{
+        display: block;
+        color:#888;
+        font-size: 0.7rem;
+        padding:0.5em;
+    }
+    #header .sub-container .sub-menu{
+        margin-right: 3.5rem;
+    }
+    #header .sub-container .sub-banner{
+        position: absolute;
+        width: 100%;
+        bottom:0%;
+        text-align: center;
+        background: #111;
+    }
+    #header .sub-container .sub-banner h6>a{
+        font-size: 1rem;
+        color:#ddd;
+    }
+    #header .sub-container .sub-banner .s-banner-item{
+        padding-bottom: 1.3rem;
+        font-size: 0.7rem;
+    }
+    .sub-inner{
+        display: flex;
+        justify-content: space-around;
+    }
+    #header .main-menu:hover > a {
+        color:crimson;
+    }
+/* ################################## Section One (Title Section) ####################### */
+
+    .section-one{
+        background: url(../img/mainsection.jpg) no-repeat center center;
+        background-size: cover;
+        padding-top: 12em;
+        position: relative;
+        z-index: 1;
+    }
+    .section-one .main-container{
+        width: 1080px;
+        margin: 0 auto;
+        height: 60vh;
+    }
+    .section-one .main-logo{
+        float: left;
+    }
+    .section-one .main-logo img{
+        animation: oneani 2s 0.5s linear ;
+        opacity: 0;
+        animation-fill-mode: both;
+    }
+    .section-one .main-logo a{
+        display: block;
+        text-align: center;
+        width: 8.125rem;
+        border:2px solid #fff;
+        height: 2.3125rem;
+        line-height: 2.3125rem;
+        color: #fff;
+        font-weight: bold;
+        margin: 1.5rem auto;
+        box-sizing: border-box;
+        border-radius: 5px;
+        transition: 0.5s;
+        animation: oneani 2s 2s linear ;
+        opacity: 0;
+        animation-fill-mode: both;
+    }
+    .section-one .main-logo a:hover{
+        background: brown;
+    }
+    .section-one .main-box{
+        position: relative;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    .section-one .main-items{
+        position: absolute;
+    } 
+    .section-one .main-items img {
+        max-width: 100%;
+    }
+    .section-one .main-item-1{
+        bottom:8%;
+        left:30%;
+        bottom: 5%;
+        animation: oneani 2s 1s linear ;
+        opacity: 0;
+        animation-fill-mode: both;
+    }
+    .section-one .main-item-2{
+        left:55%;
+        bottom:20%;
+        animation: oneani 2s 1.5s linear ;
+        opacity: 0;
+        animation-fill-mode: both;
+    }
+    .section-one .main-item-3{
+        right: 0%;
+        bottom:5%;
+        animation: oneani 2s 2s linear ;
+        opacity: 0;
+        animation-fill-mode: both;
+    } 
+    .section-one .main-item-1:before,
+    .section-one .main-item-2:before,
+    .section-one .main-item-3:before{
+        content: '';
+        position: absolute;
+        width: 250px;
+        height: 100px;
+    }
+    .section-one .main-item-1:before{
+        bottom: 15%;
+        left:-50%;
+        background: url(../img/maint-01.png) no-repeat center left;
+        background-size: contain;
+
+    }
+    .section-one .main-item-2:before{
+        bottom: 100%;
+        left:50%;
+        transform: translateX(-50%);
+        background: url(../img/maint-02.png) no-repeat;
+        background-size: contain;
+    }
+    .section-one .main-item-3:before{
+        bottom: 100%;
+        left:45%;
+        transform: translateX(-50%);
+        background: url(../img/maint-03.png) no-repeat;
+        background-size: contain;
+    }
+    @keyframes oneani {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    }
+/* ################################## Section Two (Bar Section) ####################### */
+
+    .section-two{
+        width:100%;
+    }
+    .section-two .container{
+        width: inherit;
+        display: flex;
+    }
+    .section-two .two-box-1{
+        background:#111;
+        color:#fff;
+        font-size: 0.8rem;
+    }
+    .section-two .two-box-2{
+        background: #eee;
+    }
+    .section-two .two-box-1,
+    .section-two .two-box-2{
+        width: 50%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .section-two .two-box-1 h3{
+        margin: 0;
+        margin-top: 1.5rem;
+    }
+    .section-two .two-box-2 h3{
+        display: inline-block;
+        color:333;
+        text-shadow: 0 0 2px #333;
+    }
+    .section-two .two-box-2 a{
+        font-size: 1.5rem;    
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border:1px solid black;
+        border-radius: 50%;
+        margin-left: 2.5rem;
+    }
+/* ################################## Section Three (Reward Section) ####################### */
+
+    .section-three{
+        background: #1e3932;
+        color:#fff;
+        padding:1.875rem 0 2.5rem 0;
+        position: relative;
+    }
+    .section-three .container{
+        width: 1080px;
+        margin: 0 auto;
+    }
+    .section-three .container img{
+        float: left;
+        margin-right: 3rem;
+        width: 12rem;
+        height: 10rem;
+    }
+
+    .section-three .three-box-1{
+        position: relative;
+        z-index: 10;
+    }
+    .section-three .three-box-1 h2{
+        margin: 0;
+        margin-bottom: 1.3rem;
+    }
+    .section-three .three-box-1 p{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .section-three .three-box-1 span{
+        font-weight: bold;
+    }
+    .section-three .three-box-1 .threebtn{
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        z-index: -101;
+    }
+    .section-three .three-box-1 .threebtn a{
+        color:#fff;
+        padding: 0rem 1rem;
+        display: inline-block;
+        height: 35px;
+        line-height: 35px;
+        font-weight: bold;
+    }
+    .section-three .three-box-1 .threebtn a:nth-child(1){
+        background: #00704a;
+        border-radius: 5px;
+        margin-right: 5px;
+        box-sizing: border-box;
+
+    }
+    .section-three .three-box-1 .threebtn a:nth-child(2){
+        border-radius: 5px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+    }
+    .section-three .three-box-2{
+        position: relative;
+        z-index: 10;
+    }
+    .section-three .three-box-2 span{
+        font-weight: bold;
+    }
+    .section-three .three-box-2 .threebtntwo{
+        position: absolute;
+        bottom: 0;  
+        right: 0;
+    }    
+    .section-three .three-box-2 .threebtntwo a{
+        color:#fff;
+        border: 1px solid #fff;
+        padding:0 1rem;
+        display: inline-block;
+        border-radius: 5px;
+        height: 35px;
+        line-height: 35px;
+        box-sizing: border-box;
+        font-weight: bold;
+    }
+/* ################################## Section Four (Blend Section) ####################### */
+
+    .section-four{
+        background: url(../img/fourbg.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .section-four .container{
+        width: 1080px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    .section-four .img-box-1{
+        float: left;
+        position: relative; 
+    }
+
+    .section-four .img-text-1{
+        position: absolute;
+        right:10%;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    .section-four .four-btn{
+        display: block;
+        width:130px;
+        margin-top: 1.5rem;
+        color:#222;
+        border:2px solid #222;
+        text-align: center;
+        height: 38px;
+        line-height: 38px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+    .section-four .four-btn:hover{
+        color:#fff;
+        background: #000;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+/* ################################## Section five (Costarica Section) ####################### */
+
+    .section-five{
+        background: #F4BC99;
+        position: relative;  
+        overflow: hidden;
+        height: 400px;
+        z-index: 1;
+    }
+    .section-five .img-text-1{
+        width: 1080px;
+        padding: 7.75em 0 0 1.5em;
+        box-sizing: border-box;
+        text-align: center;
+        margin-left: 3em;
+    }
+    .five-btn{
+        width: 1080px; 
+        text-align: center;
+        margin-left: 7em;
+    }
+    .five-btn a{
+        color:#682C11;
+        padding:.5em 1em;
+        border-radius: 5px;
+        border:2px solid #682C11;
+        transition: 0.5s;
+    }
+    .five-btn a:hover{
+        color:#fff;
+        text-decoration: underline;
+        background: #682c11;
+    }
+    .section-five .img-box-1{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: -10%;
+        z-index: -1;
+    }
+    .section-five .img-box-1 .pcverimg{
+        width: 100%;
+    }
+    .section-five .moverimg{
+        display: none;
+    }
+/* ################################## Section Six (Favorite Section) ####################### */
+
+    .section-six{
+        background: url(../img/fav_prod_bg_new.jpg) no-repeat center center fixed;
+        background-size: cover;
+        height: 800px;
+    }
+    .section-six .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .section-six .text-box{
+        margin-right: 5em;
+        position: relative;
+    }
+    .section-six .title{
+        overflow: hidden;
+    }
+    .section-six .title img{
+        float: right;
+    }
+    .six-btn{
+        color:#fff;
+        position: absolute;
+        right:3%;
+        padding:0.5em 1em;
+        border:2px solid #fff;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    .six-btn:hover{
+        background: #fff;
+        color:#111;
+        text-decoration: underline;
+    }
+/* ################################## Section seven (Reserve Section) ####################### */
+
+    .section-seven{
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    .section-seven .container{
+        width: 1240px;
+        margin: 0 auto;
+        padding: 5.625em 0 ;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .section-seven .img-box-1{
+        margin-right: 4em;
+    }
+    .section-seven .text-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section-seven .img-text-1{
+    margin-bottom: 3em;
+    }
+    .section-seven .container:before,
+    .section-seven .container:after{
+        content: '';
+        background: #ddd;
+        display: inline-block;
+        position: absolute;
+    }
+    .section-seven .container:before{
+        width: 100%;
+        height: 1px;
+        top: 55%;
+        z-index: -1;
+    }
+    .section-seven .container:after{
+        height: 70%;
+        width: 1px;
+        left: 45%;
+    }
+    .seven-btn{
+        padding: 0.5rem 0.9rem ;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+/* ################################## Section Eight (Store Section) ####################### */
+
+    .section-eight{
+        width: 100%;
+        height: 400px;
+        background: url(../img/eightbg.png);
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .section-eight h2,
+    .section-eight h3,
+    .section-eight p{
+        margin: 0;
+    }
+    .section-eight .container{
+        display: flex;
+        justify-content: center;
+    }
+    .section-eight .img-box{
+        position: relative;
+        height: 400px;
+        margin-right: 8em;
+    }
+    .section-eight .image-1 img{
+        width: 366px;
+        height: 312px;
+    }
+    .section-eight .image-2{
+        position: absolute;
+        bottom: 0%;
+        right: -10%;
+    }
+    .section-eight .text-box{
+        align-self: center
+    }
+    .section-eight .text-1{
+        margin-bottom: 1.5em;
+    }
+    .eight-btn{
+        display: inline-block;
+        padding: 0.4rem 1.3rem;
+        border: 2px solid #111;
+        margin-top: 1rem;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    .eight-btn:hover{
+        background: #111;
+        color:#fff;
+        text-decoration: underline;
+    }
+/* ################################## Footer ####################### */
+
+    #footer{
+        background: #2C2A29;
+        padding: 2em 0 2.1em 0;
+        color:#fff;
+    }
+    #footer a{
+        color:#fff;
+    }
+    .footer-box-1{
+        display: flex;
+        width: 1240px;
+        margin: 0 auto;
+        justify-content: space-around;
+        background: url(../img/footer_logo.png) right no-repeat;
+    }
+    #footer .item h5{
+        margin:0;
+        font-size: 1rem;
+        position: relative;
+    }
+    .footeritem{
+        margin-top: 1em;
+    }
+    .footer-box-1 .footeritem > a{
+        display: block;
+        font-size: 0.75rem;
+        padding-top: 0.3em;
+        font-weight: normal;
+    }
+    .footer-icons{
+        position: absolute;
+        right:10%;
+        display: none;
+    }
+    .footer-icons i{
+        font-size: 1.5rem;
+        color:rgb(117, 103, 77)
+    }
+    .footer-box-2 .two-container{
+    width: 100%; 
+    text-align: center;
+    margin-top: 2rem;
+    }
+    .footer-box-3{
+        text-align: center;
+        font-size: 0.75rem;
+    }
+    .footer-box-3 .item > a{
+        display:inline;
+        padding: 0 0.625rem;
+        border-right: 1px solid #777;
+    }
+    .abold{
+        color:green;
+        font-weight: bold;
+    }
+    .footer-btn a{
+        display: inline-block;
+        padding:0.5rem 1rem;
+        margin: 1rem 0.15rem 0 0.3rem;
+        border-radius: 5px;
+        border:2px solid #fff;
+    }
+    .footer-btn a:hover{
+        text-decoration: underline;
+    }
+    .footer-box-3 ul{
+        padding:1.5625rem  0 0.3125rem 0;
+        margin: 0;
+    }
+    .footer-box-3 ul li{
+        display: inline;
+        margin: 0 0.4rem;
+        color:#999;
+    }
+    #footer p{
+        color:#999;
+        font-weight: bold;
+    }
