@@ -1,0 +1,251 @@
+@media screen and (max-width : 1500px) {
+    .portfolio-inner {
+        width: 100%;
+    }
+}
+@media screen and (max-width : 1280px) {
+    .about-inner, .skill-inner, .hcjskill-inner, .contact-inner, .footer-inner {
+        width: 100%;
+    }
+    .subpagebtn > a {
+        padding: 8px 15px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+@media screen and (max-width : 1024px) {
+/* ####################### ABOUT ################# */
+    .about-content {
+        padding: 20px;
+    }
+    .about-items {
+        width: 60%;
+        padding-left: 55px;
+        padding-top: 10px;
+    }
+    .about-images {
+        padding-top: 30px;
+    }
+    .about-slogan {
+        font-size: 28px;
+    }
+    .profile li {
+        font-size: 18px;
+    }
+    .about-content p {
+        font-size: 16px;
+    }
+/* ####################### SKILL ################# */
+    .skill-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-item {
+        margin-bottom: 50px;
+    }
+    .hcjskill-content {
+        padding: 20px;
+    }
+    .hcjskill-box {
+        width: 100%;
+        display: block;
+    }
+/* ####################### PortFolio ################# */
+    .portfolio-content {
+        padding: 20px;
+    }
+    .portfolio-items > div {
+        float: none;
+        width: 100%;
+    }    
+    .portfolio-items-invert {
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio-text {
+        padding-left: 0;
+    }
+    .portfolio-items-invert .portfolio-text {
+        order: 1;
+        padding-right: 0;
+    }
+/* ####################### Contact ################# */
+    .contact-content {
+        padding: 20px;
+    }
+}
+@media screen and (max-width : 768px) {
+/* ####################### COMMON CSS ################# */
+    section {
+        padding: 40px 0; 
+    }
+    .headline {
+        font-size: 24px;
+        padding: 20px 0 15px 0;
+        margin-bottom: 30px;
+    }
+/* ####################### HEADER ################# */
+    header {
+        width: 190px;
+        left: -192px;
+    }
+    .gnb a {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .trigger {
+        width: 30px;
+        height: 18px;
+        top: 3%;
+    }
+    .trigger span {
+        height: 3px;
+    }
+/* ####################### HOME ################# */
+    .home-content {
+        width: 65%;
+    }
+    .home-content span {
+        left: 10%;
+    }
+    .home-content h1 {
+        font-size: 28px;
+    }
+/* ####################### ABOUT ################# */
+    .about-content {
+        overflow: none;
+        height: auto;
+    }
+    .about-content > div {
+        float :none;
+        width: 100%;
+    }
+    .about-items {
+        padding-left: 0;
+        padding-top: 50px;
+    }
+    .about-content p:before,
+    .about-content p:after {
+        font-size: 100px;
+    }
+/* ####################### SKILL ################# */
+    .skill-item span, .skill-item p {
+        font-size: 16px;
+    }
+    .hcjskill-inner .headline {
+        font-size: 14px;
+    }
+    .hcjskill-content {
+        margin-top: 0;
+    }
+    .hcjskill-box {
+        height: 450px;
+    }
+    .hcjskill-desc {
+        height: 55%;
+    }
+    .hcjskill-desc h3 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .hcjskill-desc h3 em {
+        font-size: 14px;
+    }
+    .hcjskill-desc p {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+    /* ####################### SUB Page Iframe ################# */
+/* iframe sub01 */
+    .subiframe-gnb {
+        width: 100%;
+        padding: 10px 5px;
+    }
+    .subiframe-gnb a {
+        font-size: 14px;
+        width: 39px;
+        margin-right: 2px;
+    }
+/* iframe sub04 */
+    .iframe04-container {
+        height: auto;
+    }
+    .iframe04-content {
+        width: 100%;
+    }
+    .iframe04-item {
+        overflow: none;
+    }
+    .iframe04-floatbox > div {
+        float: none;
+        width: 100%;
+    }
+    .iframe04-right {
+        padding-right: 0;
+        font-size: 14px;
+    }
+    /* iframe sub05 */
+    .iframe05-content {
+        width: 100%;
+    }
+    .iframe05-content label {
+        font-size: 16px;
+    }
+    .iframe05-text .iframe05-checkd, .iframe05-text p {
+        font-size: 10px;
+    }
+    /* iframe sub06 */
+    .iframe06-container {
+        height: auto;
+    }
+    .iframe06-content {
+        width: 100%;
+    }
+    .iframe06-content > div {
+        height: auto;
+        float: none;
+        width: 100%;
+    }
+/* ####################### PortFolio ################# */
+    .portfolio {
+        padding: 60px 0;
+    }
+    .portfolio-content {
+        padding-top: 20px;
+    }
+    .portfolio-text h2 {
+        font-size: 22px;
+    }
+    .portfolio-text h2 span {
+        font-size: 30px;
+    }
+    .portfolio-text h3 {
+        font-size: 16px;
+    }
+    .portfolio-text p {
+        font-size: 16px;
+    }
+    .portfolio-text p em {
+        font-size: 14px;
+    }
+    .portfolio-text a {
+        margin-top: 20px;
+    }
+    .portfolio-items {
+        margin-bottom: 90px;
+    }
+/* ####################### Contact ################# */
+    .contact-content h4 {
+        font-size: 20px;
+    }
+    .contact-content p {
+        font-size: 18px;
+    }
+    .contact-content li {
+        font-size: 18px;
+    }
+/* ####################### Footer ################# */
+    .footer-inner p {
+        font-size: 13px;
+    }
+}
