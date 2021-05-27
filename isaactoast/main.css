@@ -1,0 +1,990 @@
+/* #################### fontawesome ##################### */
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/* #################### Google font ##################### */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+/* #################### Reset CSS ##################### */
+    * {
+        box-sizing: border-box;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+        color: #222;
+    }
+    input,button {
+        outline: none;
+        border: none;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        margin: 0;
+    }
+/* #################### Defalut CSS ##################### */
+    body {
+        margin: 0;
+        color: #222;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+/* #################### Header ##################### */
+
+    header {
+        height: 120px;
+        position: relative;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+    .header-inner {
+        width: 80%;
+        height: inherit;
+        margin: 0 auto;
+    }
+    .logo {
+        height: inherit;
+        float: left;
+        padding-top: 10px;
+        width: 50%;
+    }
+    .logo img {
+        margin-top: 25px;
+    }
+    .nav-menu {
+        float: right;
+        width: 50%;
+        height: 120px;
+    }
+    .main-menu {
+        height: inherit;
+        text-align: center;
+        position: relative;
+    }
+    .main-menu:before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: -150%;
+        width: 297.9%;
+        height: 250px;
+        background: #f8c291;
+        display: none;
+        z-index: 100;
+    }
+    .main-menu:hover:before {
+        display: block;
+    }
+    .main-menu:hover .sub-menu {
+        display: block;
+    }
+    .menu-items {
+        float: left;
+        width: 20%;
+        line-height: 120px;
+        position: relative;
+    }
+
+    .menu-items > a {
+        font-size: 17px;
+    }
+    .sub-menu {
+        position: absolute;
+        z-index: 100;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        line-height: 1.6em;
+        display: none;
+    }
+    .sub-menu li {
+        line-height: 2.4em;
+    }
+    .sub-menu li a {
+        color: #333;
+    }
+/* #################### Main-section ##################### */
+
+    .main-section {
+        width: 100%;
+        border: 1px solid #fff;
+        overflow: hidden;
+    }
+    .slider-inner img {
+        width: 100%;
+        height: 100%;
+    }
+    .mainsection-content {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+    }
+    .content-item {
+        width: 20%;
+        text-align: center;
+        line-height: 80px;
+        cursor: pointer;
+    }
+    .content-item:hover img {
+        transform: rotateX(360deg);
+    }
+    .content-item:hover span {
+        font-size: 22px;
+    }
+    .content-item span {
+        font-size: 20px;
+    }
+    .content-item span img {
+        margin-bottom: -5px;
+        margin-right: 10px;
+        transform: rotateX(0);
+        transition: 0.5s;
+    }
+    .content-item:nth-child(1) {
+        background: crimson;
+        color: #fff;
+        border-top-left-radius: 30px;
+    }
+    .content-item:nth-child(2) {
+        background: #999;
+        color: #fff;
+    }
+    .content-item:nth-child(3) {
+        background: dodgerblue;
+        color: #222;
+        border-bottom-right-radius: 30px;
+    }
+/* #################### Slick CSS ##################### */
+
+    .slick-dots {
+        position: absolute;
+        bottom: 30px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 30px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+        opacity: .25;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+/* #################### About-section ##################### */
+    .about-section {
+        height: 800px;
+        position: relative;
+        background: url(images/aboutbg.jpg) no-repeat center center;
+        background-size: cover;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .about-section:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        background: rgba(0, 0, 0, 0.726);
+    }
+    .about-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 400px;
+        height: 500px;
+        background: #40407ade;
+        padding: 30px;
+        color: #fff;
+    }
+    .about-content:before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: 50%;
+        transform:rotate(45deg);
+        width: 20px;
+        height: 20px;
+        
+    }
+    .about-content h2 {
+        font-size: 30px;
+        font-weight: 900;
+        margin: 10px 0;
+    }
+    .about-content h2 b {
+        color: crimson;
+        margin-right: 5px;
+    }
+    .about-content hr {
+        border: none;
+        height: 1px;
+        background: #fff;
+        width: 70%;
+        margin: 20px auto;
+    }
+    .about-content span {
+        font-weight: 600;
+        font-size: 17px;
+    }
+    .about-content p {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.8em;
+    }
+    .about-content em {
+        font-style: normal;
+        border-bottom: 1px solid #fff;
+    }
+/* #################### Brand-section ##################### */
+
+    .brand {
+        text-align: center;
+        position: relative;
+        height: 500px;
+        background: #f7f1e3;
+    }
+    .brand-text {
+        width: 65%;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .brand h3 {
+        font-size: 40px;
+        margin-bottom: 25px;
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    .brand h3 b {
+        color: crimson;
+        margin-right: 5px;
+    }
+    .brand-text h4 {
+        font-size: 22px;
+        margin: 20px 0;
+        padding-top: 70px;
+        position: relative;
+        display: inline-block;
+    }
+    .brand-text h4:before {
+        content: ',,';
+        position: absolute;
+        top: 50%;
+        left: -18%; 
+        font-size: 60px;
+        transform: rotate(180deg) ;
+        color: #227093;
+    }
+    .brand-text p {
+        font-size: 18px;
+        line-height: 1.7em;
+        color: #555;
+        margin-bottom: 30px;
+    }
+    .brand-text p em {
+        font-style: normal;
+        color: crimson;
+    }
+    .brand-text span {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    .brand-text span b {
+        font-family: songmyung;
+        font-size: 30px;
+    }
+    .brand-text a {
+        position: absolute;
+        right: 0%;
+        bottom: 2%;
+    }
+    .brand-text a:before {
+        content: '\f061';
+        font-family: fontawesome;
+        margin-right: 5px;
+        color: #227093;
+    } 
+    .brand-images {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    .brand-images img {
+        width: 300px;
+        height: 200px;
+        margin-right: 10px;
+    }
+/* #################### ICONS-section ##################### */
+
+    .icons {
+        padding-top: 200px;
+    }
+    .icons-box {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+    }
+    .icons-item {
+        width: 20%;
+        text-align: center;
+        line-height: 80px;
+        transition: 0.5s;
+    }
+    .icons-item:nth-child(1) {
+        background: #3b5999;
+        border-top-left-radius: 30px;
+    }
+    .icons-item:nth-child(2) {
+        background: #e4405f;
+    }
+    .icons-item:nth-child(3) {
+        background: #00c300;
+        border-bottom-right-radius: 30px;
+    }
+    .icons-item:hover img {
+        transform: rotateX(360deg);
+    }
+    .icons-item a {
+        color: #fff;
+        font-size: 20px;
+        display: inline-block;
+    }
+    .icons-item:hover a {
+        font-size: 22px;
+    }
+    .icons-item a img {
+        margin-bottom: -5px;
+        margin-right: 10px;
+        transform: rotateX(0);
+        transition: 0.5s;
+    }
+/* #################### IssacMenu-section ##################### */
+    .issac-menu {
+        padding: 70px;
+        text-align: center;
+        margin: 20px 0;
+        overflow: hidden;
+        border-top: 1px solid #ddd;
+    }
+    .issac-menu h3 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .issac-menu h3 b {
+        color: crimson;
+        margin-right: 5px;
+    }
+    .issac-list {
+        margin-bottom: 40px;
+    }
+    .issac-list span {
+        padding-right: 8px;
+        margin-right: 8px;
+        font-size: 20px;
+        border-right:  1px solid #ddd;
+        cursor: pointer;
+    }
+    .issac-list span.active {
+        color: crimson;
+    } 
+    .issac-list a:last-child {
+        border: none;
+    }
+    .issac-slider {
+        display: none;
+        padding: 0 100px;
+    }
+    .issac-slider.active {
+        display: block;
+    }
+    .issac-slider img {
+        width: 235px;
+        margin: 0 auto;
+        height: 235px;
+        cursor: pointer;
+    }
+    .issac-slider h4 {
+        font-size: 18px;
+    }
+    .issac-slider span {
+        font-size: 15px;
+        color: #999;
+    }
+/* slick css */
+    .issac-menu .slick-prev {
+        left: 7px;
+    }
+    .issac-menu .slick-arrow {
+        right: 7px;
+    }
+    .issac-menu .slick-prev:before, .slick-next:before {
+        font-family: 'slick';
+        font-size: 30px;
+        line-height: 1;
+        opacity: .75;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .issac-menu .slick-next:before {
+        content:'\f105';
+        font-family: fontawesome;
+    }
+    .issac-menu .slick-prev:before {
+        content:'\f104';
+        font-family: fontawesome;
+    }
+/* #################### Community-section ##################### */
+
+    .community {
+        background: #fbeaeb;
+        text-align: center;
+        padding: 70px 0;
+    }
+    .community h2 {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+    .community h2 b {
+        color: crimson;
+        margin-right: 5px;
+    }
+    .community-content {
+        margin-top: 50px;
+    }
+    .community-box {
+        display: inline-block;
+        width: 17%;
+        height: 200px;
+        background: #FDDFE1;
+        margin-right: 10px;
+        vertical-align: top;
+        transition: 0.5s;
+    }
+    .community-box:hover {
+        background: #FCC7CB;
+    }
+    .community-box h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 0 25px 0;
+    }
+    .slick-track {
+        overflow: hidden;
+    }
+    .community-box hr {
+        border: none;
+        height: 1px;
+        background: #ccc;
+    }
+    .community-box p {
+        font-weight: 300;
+    }
+    .community-box span {
+        text-align: left;
+        font-size: 13px;
+        display: block;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+/* #################### Footer ##################### */
+
+    .footer {
+        padding: 70px 60px 30px 60px;
+    }
+    .footer-logo {
+        float: left;
+        margin-right: 20px;
+        height: 192px;
+    }
+    .footer-menu {
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .footer-menu li {
+        float: left;
+        margin-right: 15px;
+        font-size: 16px;
+        width: 14%;
+        border-right: 1px solid #ddd;
+    }
+    .footer-menu li:last-child {
+        border: none;
+    }
+    .footer-list {
+        overflow: hidden;
+    }
+    .footer-items {
+        overflow: hidden;
+        margin-bottom: 3px;
+    }
+    .footer-items li {
+        float: left;
+        font-size: 13px;
+        margin-right: 10px;
+    }
+    .footer-items li:before {
+        content: '＊';
+        font-size: 5px;
+        margin-right: 3px;
+        color: crimson;
+    }
+    .copyright {
+        margin-top: 15px;
+    }
+    .footer-inner span {
+        font-size: 14px;
+        line-height: 1.7em;
+        display: block;
+    }
+/* #################### Sub Page Menu ##################### */
+
+    .subpagemenu-bars {
+        text-align: center;
+        padding: 30px 0;
+    }
+    .subpagemenu-list {
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    .subpagemenu-list span {
+        cursor: pointer;
+        margin-right: 25px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .subpagemenu-list span.active {
+        color: crimson;
+    }
+    .subpagemenu-main {
+        overflow: hidden;
+        display: none;
+        text-align: center;
+    }
+    .subpagemenu-main.active {
+        display: block;
+    }
+    .subpagemenu-main h3 {
+        font-size: 30px;
+        font-weight: 900;
+        color: crimson;
+        margin-bottom: 15px;
+    }
+    .subpagemenu-main > h4 {
+        font-weight: 300;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .subpagemenu-main-inner {
+        overflow: hidden;
+        padding-left: 120px;
+    }
+    .subpagemenu-main-inner > div {
+        width: 21%;
+        float: left;
+        height: 330px;
+        margin-right: 30px;
+        margin-top: 50px;
+    }
+    .subpagemenu-main > div img {
+        width: 70%;
+    }
+    .subpagemenu-main > div h4 {
+        font-size: 20px;
+        color: #222;
+        font-weight: 500;
+    }
+    .subpagemenu-main > div span {
+        font-size: 15px;
+        color: #555;
+        font-weight: 300;
+    }
+    .subpagemenu-main > div p {
+        color: #222;
+    }
+    .subpagemenu-main h5 {
+        text-align: left;
+        font-size: 35px;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    .subpagemenu-main .tea {
+        clear: both;
+        padding-top: 110px;
+    }
+    .subpagefooter {
+        margin-top: 120px;
+        clear: both;
+        border-top: 1px solid #ddd;
+    }
+/* #################### Sub Page CEO GREETINGS ##################### */
+
+    .ceogreetings {
+        padding: 70px 30px;
+    }
+    .ceogreetings h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+    .ceogreetings h2 b {
+        color: crimson;
+        margin-right: 5px;
+    }
+    .ceogreetings span {
+        text-align: center;
+        display: block;
+        color: #555;
+        margin-top: 8px;
+    }
+    .ceogreetings-about {
+        padding: 90px 0;
+        margin-top: 100px;
+        background: #EBEAE6 url(images/brandimage01.png) no-repeat center right;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .ceogreetings-about > div {
+        width: 30%;
+        margin: 40px ;
+        margin-left: 300px;
+    }
+    .ceogreetings-about > div h3 {
+        font-size: 30px;
+    }
+    .ceogreetings-about > div p {
+        font-size: 20px;
+        line-height: 1.7em;
+    }
+    .ceogreetings-about > div p b {
+        color: crimson;
+    }
+    .ceogreetings-content-01 p,
+    .ceogreetings-content-02 p,
+    .ceogreetings-content-03 p {
+        color: #333;
+    }
+    .ceogreetings-content-01 em,
+    .ceogreetings-content-02 em,
+    .ceogreetings-content-03 em {
+        font-style: normal;
+    }
+    .ceogreetings-content-01 {
+        width: 100%;
+        height: 800px;
+        position: relative;
+    }
+    .ceogreetings-content-01 .ceogreetings-items {
+        overflow: hidden;
+        position: absolute;
+        width: 70%;
+        height: 700px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .ceogreetings-content-01 .ceogreetings-items img {
+        float: left;
+    }
+    .ceogreetings-content-01 .ceogreetings-text {
+        float: right;
+        height: inherit;
+        position: relative;
+        width: 55%;
+    }
+    .ceogreetings-content-01 .ceogreetings-text p {
+        position: absolute;
+        top: 50%;
+        font-size: 20px;
+        left: 5%;
+        transform: translateY(-50%);
+    }
+    .ceogreetings-content-01 .ceogreetings-text p em {
+        color: crimson;
+    }
+    .ceogreetings-content-02 {
+        clear: both;
+        height: 400px;
+        text-align: center;
+        position: relative;
+        background: #F7F7F7;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .ceogreetings-content-02 p {
+        width: 50%;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .ceogreetings-content-02 b {
+        font-weight: 700;
+    }
+    .ceogreetings-content-02 em {
+        color: crimson;
+    }
+    .ceogreetings-content-03 {
+        height: 800px;
+        position: relative;
+    } 
+    .ceogreetings-content-03 .ceogreetings-items {
+        position: absolute;
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        height: 700px;
+        overflow: hidden;
+        transform: translate(-50%, -50%);
+    }
+    .ceogreetings-content-03 .ceogreetings-text {
+        float: left;
+        width: 40%;
+        height: inherit;
+        position: relative;
+    }
+    .ceogreetings-content-03 .ceogreetings-text p {
+        position: absolute;
+        font-size: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8%;
+    }
+    .ceogreetings-content-03 .ceogreetings-text em {
+        color: crimson;
+        font-weight: 600;
+    }
+    .ceogreetings-content-03 .ceogreetings-text p span {
+        margin-top: 50px;
+        display: block;
+        margin: 50px auto;
+        font-size: 22px;
+    }
+    .ceogreetings-content-03 .ceogreetings-text p span img {
+        margin-left: 15px;
+    }
+/* #################### Sub Page Start Up Guide ##################### */
+
+    .startupguide {
+        padding: 70px 40px ;
+    }
+    .startupguide h2 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+    .startupguide h2 b {
+        color: crimson;
+        margin-right: 5px;
+    }
+    .startupguide > span {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .startupguide-main {
+        margin: 50px 0;
+        background: #f7f7f7;
+        padding: 40px 0 80px 0;
+    }
+    .startupguide-inner {
+        padding: 20px;
+    }
+    .startupguide-inner h3 {
+        font-size: 30px;    
+        margin: 30px 0;
+        margin-left: 50px;
+    }
+    .startupguide-items {
+        margin-left: 80px;
+        width: 90%;
+    }
+    .startupguide-items > span {
+        display: inline-block;
+        width: 390px;
+        height: 60px;
+        padding-top: 15px;
+        text-align: center;
+        background: #EAEAEA;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        color: #666;
+        margin-right: 30px;
+    }
+    .startupguide-item {
+        width: 190px;
+        height: 180px;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        position: relative;
+        margin-right: 40px;
+    }
+    .startupguide-item h4 {
+        font-size: 22px;
+        margin-top: 10px;
+        color: crimson;
+        font-weight: 500;
+    }
+    .startupguide-item p {
+        position: relative;
+    }
+    .startupguide-item span {
+        color: #555;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .startupguide-item:before {
+        content: '';
+        font-size: 26px;
+        font-weight: bold;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #555;
+        bottom: -1px;
+    }
+    .startupguide-item:after {
+        content: '';
+        width: 13%;
+        height: 1px;
+        background: #555;
+        position: absolute;
+        right: 0;
+        bottom: -1px;
+        transform: rotate(45deg);
+        transform-origin: right;
+    }
+    .startupguide-table {
+        padding: 40px 0 80px 0;
+    }
+    .startupguide-table h3 {
+        font-size: 30px;    
+        margin: 30px 0;
+        margin-left: 50px;
+    }
+    .startupguide-table table {
+        width: 85%;
+        border-top: 2px solid #000;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+    .table-header {
+        height: 60px;
+        background:#f5f5f5;
+        border: 1px solid #ddd;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .table-center {
+        height: 60px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-weight: 300;
+    }
+    .table-right {
+        height: 60px;
+        border: 1px solid #ddd;
+        font-weight: 300;
+        padding-left: 30px;
+    }
+    .tbg {
+        background: #d3313a;
+        color: #fff;
+    }
+    .startupguide-table-text {
+        width: 85%;
+        margin: 0 auto;
+        padding: 80px 0;
+        border-bottom : 1px solid #ddd;
+    }
+    .startupguide-table-text h4 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .supplies {
+        padding: 30px 0;
+    }
+    .supplies h3 {
+        font-size: 30px;    
+        margin: 30px 0;
+        margin-left: 50px;
+    }
+    .supplies-inner {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .supplies-content {
+        display: inline-block;
+        vertical-align: top;
+        width: 45%;
+        border: 1px solid #bbb;
+        margin-right: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .supplies-content:before {
+        content:attr(data-text);
+        font-size: 30px;
+        font-weight: 700;
+        color: crimson;
+        display: inline-block;
+        margin: 15px 0;
+        margin-left: -20px;
+    }
+    .supplies-content h4 {
+        margin-left: -20px;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .supplies-content li {
+        line-height: 1.7em;
+    }
+    .sct-01, .sct-02 {
+        height: 300px;
+    }
+    .sct-03, .sct-04 {
+        height: 150px;
+    }
+/* #################### Go to top ##################### */
+    .gototop {
+        position: fixed;
+        bottom: 3%;
+        right: -100px;
+        font-size: 24px;
+        color: crimson;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        transition: 0.5s;
+        background: #f5f5f5;
+    }
+    .gototop.active {
+        right: 2%;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
