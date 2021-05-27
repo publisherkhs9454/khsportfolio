@@ -1,0 +1,391 @@
+@media screen and ( max-width : 1300px ) {
+    .header-inner,
+    .brandvision-inner,
+    .philosophy-inner,
+    .banner-inner,
+    .popularity-inner,
+    .faq-inner,
+    .lineup-inner,
+    .bluelink-inner,
+    .event-inner,
+    .news-inner,
+    .footer-inner {
+        width: 100%;
+    }
+}
+@media screen and ( max-width : 1024px ) {
+/* ######################### HEADER ##################### */
+    header {
+        width: 100%;
+    }
+    .gnb a {
+        font-size: 16px;
+        margin: 5px;
+    }
+/* ######################### HOME ##################### */
+    .home {
+        background: #f9f9f9;
+    }
+    .slide-show {
+        display: none;
+    }
+    .slogan,
+    .home-content h2 {
+        color: #333;
+        text-shadow: none;
+        text-shadow: 3px 3px 2px #bbb;
+    }
+    #typing {
+        text-shadow: 3px 3px 2px #bbb;
+    }
+/* ######################### BANNER ##################### */
+    .tab-btn label h4 {
+        font-size: 12px;
+    }
+    .popularity-images img {
+        margin-top: 80px;
+    }
+
+/* ######################### VISION ##################### */
+    .vision-desc p {
+        font-size: 16px;
+    }
+/* ######################### FAQ ##################### */
+    .faq-title {
+        font-size: 16px;
+    }
+    .faq-desc {
+        font-size: 15px;
+    }
+    .faq-images {
+        padding-top: 100px;
+    }
+    .faq-right h2 {
+        line-height: 1.5em;
+    }
+/* ######################### EVENT ##################### */
+    .event-text h1 {
+        font-size: 28px;
+    }
+/* ######################### News ##################### */
+    .news-content > div {
+        float: none;
+        width: 100%;
+    }
+}
+@media screen and ( max-width : 768px ) {
+/* ######################### Common CSS ##################### */
+    section {
+        padding: 50px 0;
+    }
+    .headline {
+        padding: 30px 0 20px 0;
+    }
+    .headline h1 {
+        font-size: 26px;
+        height: 50px;
+    }
+    .headline p {
+        font-size: 17px;
+    }
+/* ######################### HEADER ##################### */
+    .trigger {
+        display: block;
+    }
+    .gnb {
+        float: none;
+        position: fixed;
+        top: 0;
+        left: -290px;
+        height: 100vh;
+        background: #fff;
+        width: 250px;
+        margin: 0;
+        padding-top: 80px;
+        padding-left: 15px;
+        transition: 0.5s;
+    }
+    .gnb.active {
+        left: 0;
+    }
+    .gnb a {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .logo {
+        float: right;
+    }
+    .trigger {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        font-size: 25px;
+        color: #32456e;
+        cursor: pointer;
+    }
+    .trigger:before {
+        content: '\f0c9';
+        font-family: fontawesome;
+    }
+    .trigger.active:before {
+        content: '\f00d';
+        font-family: fontawesome;
+    }
+/* ######################### HOME ##################### */
+    .home {
+        height: 100vh;
+    }
+    .home-content {
+        top: 50%;
+        left: 0;
+        padding: 20px;
+    }
+    .slogan {
+        font-size: 16px;
+    }
+    .home-content h2 {
+        font-size: 30px;
+    }
+    #typing {
+        font-size: 32px;
+    }
+/* ######################### BRAND ##################### */
+    .brand {
+        padding-bottom: 50px;
+    }
+    .brandvision-inner {
+        padding: 20px 0 40px 0;
+    }
+    .brandvision-content,
+    .philosophy-content {
+        padding: 20px;
+    }
+    .brandvision-left {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .brandvision-left p,
+    .philosophy-left p {
+        font-size: 16px;
+    }
+    .brandvision-content > div {
+        float: none;
+        width: 100%;
+    }
+    .philosophy-content > div {
+        float: none;
+        width: 100%;
+    }
+    .philosophy-left {
+        padding: 0;
+        text-align: center;
+    }
+    .philosophy-left h3 {
+        font-size: 22px;
+    }
+    .philosophy-right img {
+        width: 100%;
+    }
+/* ######################### BANNER ##################### */
+    .banner-content {
+        padding: 20px;
+        text-align: center;
+    }
+    .banner-content > div {
+        float: none;
+        width: 100%;
+    }
+    .tab-btn label span {
+        width: 90px;
+        height: 90px;
+        margin: 10px;
+    }
+    .tab-btn label img {
+        width: 40px;
+        height: 60px;
+    }
+    .tab-btn label h4 {
+        display: none;
+    }
+    .tab-text {
+        margin-top: 40px;
+        padding: 0;
+    }
+    .tab-text h3 {
+        font-size: 22px;
+    }
+    .tab-text a {
+        font-size: 14px;
+    }
+/* ######################### POPULARITY ##################### */
+    .popularity {
+        padding: 40px 0 0 0;
+    }
+    .popularity-content {
+        margin: 20px 0;
+        padding: 20px;
+    }
+    .popularity-content > div {
+        float: none;
+        width: 100%;
+    }
+    .popularity-text {
+        padding: 0;
+    }
+    .popularity-images {
+        margin-bottom: 30px;
+    }
+    .popularity-images img {
+        margin-top: 0;
+    }
+    .popularity-content-two {
+        display: flex;
+        flex-direction: column;
+    }
+    .popularity-text-two {
+        order: 1;
+    }
+    .popularity-text h3 {
+        font-size: 22px;
+    }
+    .popularity-text li {
+        font-size: 16px;
+    }
+/* ######################### VISION ##################### */
+    .vision-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .vision-content > div {
+        float: none;
+        width: 100%;
+    }
+    .vision-desc:nth-child(1) {
+        order: 1;
+    }
+/* ######################### FAQ ##################### */
+    .faq-content {
+        padding: 0 20px;
+    }
+    .faq-content > div {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    .faq-desc {
+        font-size: 14px;
+    }
+    .faq-right {
+        min-height: 400px;
+    }
+    .faq-images {
+        padding-top: 0;
+    }
+    .faq-right h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+/* ######################### LINE UP ##################### */
+    .accordian-title {
+        font-size: 16px;
+    }
+    .accordian-tap {
+        margin: 5px;
+        display: inline-block;
+        width: 28%;
+        vertical-align: top;
+    }
+    .accordian-images {
+        display: block;
+        margin-bottom: 8px;
+    }
+/* ######################### BLUE LINK ##################### */
+    .bluelink-content {
+        margin: 0;
+        padding: 20px;
+    }
+    .bluelink-item {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+/* ######################### EVENT ##################### */
+    .event-content {
+        padding: 20px;
+    }
+    .event-content > div {
+        float: none;
+        width: 100%;
+    }
+    .slide-mockup {
+        text-align: center;
+    }
+    .event-text h1 {
+        font-size: 26px;
+    }
+    .video-headline {
+        font-size: 20px;
+    }
+    .video-frame {
+        width: 100%;
+        height: auto;
+    }
+/* ######################### News ##################### */
+    .news-content {
+        padding: 20px;
+    }
+    .news-text h2 {
+        font-size: 20px;
+    }
+    .news-text p {
+        font-size: 15px;
+    }
+    .news-right {
+        padding: 0;
+    }
+    .news-item {
+        width: 100%;
+        display: block;
+        margin: 25px 0;
+    }
+    .news-item small {
+        float: none;
+    }
+/* ######################### footer ##################### */
+    .footer {
+        padding: 30px 0;
+        text-align: center;
+    }
+    .footer-content {
+        padding: 20px;
+    }
+    .footer-content > div {
+        float: none;
+        width: 100%;
+    }
+    .copyright {
+        width: 100%;
+        padding: 0;
+    }
+    .policy {
+        float: none;
+    }
+    .sns {
+        float: none;
+        margin-top: 20px;
+    }
+/* ######################### video-iframe ##################### */
+    .iframe-box i {
+        top: 20px;
+        right: 20px;
+    }
+    .video-content iframe {
+        width: 300px;
+        height: 300px;
+    }
+}

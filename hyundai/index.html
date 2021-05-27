@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JQuery CDN -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <!-- Slick JS -->
+    <script src="js/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+    <!-- Typing JS -->
+    <script src="js/typeit.min.js"></script>
+    <!-- Scroll wow JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Custom CSS / JS -->
+    <script src="custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <title>Hyundai Motors</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="gnb">
+                    <a href="#brand">브랜드</a>
+                    <a href="#popularity">인기 차량</a>
+                    <a href="#vision">경영비젼</a>
+                    <a href="#faq">자주하는 질문</a>
+                    <a href="#lineup">차량 모델</a>
+                    <a href="#event">이벤트</a>
+                    <a href="#news">최신소식</a>
+                </div>
+            </div>
+            <div class="trigger"></div>
+        </header>
+        <!-- Home -->
+        <section class="home">
+            <div class="slide-show">
+                <img src="images/home01.jpg" alt="">
+                <img src="images/home02.jpg" alt="">
+                <img src="images/home03.jpg" alt="">
+                <img src="images/home04.jpg" alt="">
+                <img src="images/home05.jpg" alt="">
+
+            </div>
+            <div class="home-content">
+                <span class="slogan">자동차에서 삶의 동반자로</span>
+                <h2>Lifetime partner in automobiles <br> and beyond</h2>
+                <em id="typing"></em>
+            </div>
+        </section>
+        <!-- Brand -->
+        <section class="brand" id="brand">
+            <div class="brandvision-inner">
+                <div class="brandvision-content">
+                    <div class="brandvision-left ltr wow">
+                        <img src="images/quotation-mark.png" alt="quotation">
+                        <h3>미래에 대한 우리의 비전</h3>
+                        <p>
+                            현대자동차는 모빌리티 솔루션 기업으로서
+                            자동차 제조를 넘어서서 모든 사람들에게 이동의 자유를 제공하고자 합니다.
+                            또한 현대자동차는 경제적인 에너지 자원으로써 수소의 가능성을 높여 청정 에너지로 전환되는 사회의 변화에서 중추적인 역할을 할 것 입니다.
+                        </p>
+                    </div>
+                    <div class="brandvision-right rtl wow">
+                        <img src="images/brand01.jpg" alt="brandvision">
+                    </div>
+                </div>
+            </div>
+            <div class="philosophy-inner">
+                <div class="philosophy-content">
+                    <div class="philosophy-left ltr wow">
+                        <h3>브랜드 철학</h3>
+                        <p>
+                            우리는 인류를 위해 옳은 일을 하고자 존재합니다. 현대인들은 한정된 일상의 시간을 의미 있게 보내는 것을 원하며, 우리는 이러한 시간의 소중함을 알고 있습니다.
+                            <br><br>
+                            그렇기 때문에 단순히 시간을 보내는 것보다 의미 있게 보내는 것이 중요하다는 것을 우리는 알고 있습니다. 우리의 목표는 모두에게 똑같이 주어진 하루 24시간을 가치 있는 시간으로 새롭게 바꾸고, 모든 순간을 보다 의미 있게 만드는 것입니다.
+                            <br><br>
+                            단지 이동을 위한 것이 아닌, 모두의 삶을 가장 가치 있는 순간으로 이어주는 것으로 만드는 것입니다. 이것이 우리가 생각하는 미래 모빌리티 입니다.
+                        </p>
+                    </div>
+                    <div class="philosophy-right rtl wow">
+                        <img src="images/brand02.jpg" alt="brand-phidlosophy">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner -->
+        <section class="banner">
+            <div class="banner-inner">
+                <div class="banner-content">
+                    <input type="radio" name="tabs" id="tab1" checked>
+                    <input type="radio" name="tabs" id="tab2">
+                    <input type="radio" name="tabs" id="tab3">
+                    <div class="tab-btn">
+                        <label for="tab1">
+                            <span>
+                                <img src="images/banner01.png" alt="banner01">
+                            </span>
+                            <h4>차량 관련 세금</h4>
+                        </label>
+                        <label for="tab2">
+                            <span>
+                                <img src="images/banner02.png" alt="banner01">
+                            </span>
+                            <h4>장애인 면세</h4>
+                        </label>
+                        <label for="tab3">
+                            <span>
+                                <img src="images/banner03.png" alt="banner01">
+                            </span>
+                            <h4>다자녀 가구 취득세 감면</h4>
+                        </label>
+                    </div>
+                    <div class="tab-text">
+                        <div class="tab tab-text01">
+                            <h3>차량 관련 세금 </h3>
+                            <p>
+                                자동차는 구입, 등록, 보유 단계에서 각종 세금을 내야 합니다. 단계별 세금 항목을 안내 드립니다.
+                            </p>
+                            <a href="#">자세히 보기</a>
+                        </div>
+                        <div class="tab tab-text02">
+                            <h3>장애인 면세</h3>
+                            <p>
+                                장애인의 경우 장애 등급과 종류에 따라 세금 혜택을 제공하고 있습니다.
+                            </p>
+                            <a href="#">자세히 보기</a>
+                        </div>
+                        <div class="tab tab-text03">
+                            <h3>다자녀 가구 취득세 감면</h3>
+                            <p>
+                                다자녀 가구의 경우 취득한 자동차의 취득세를 감면하며 출산 및 양육을 지원하고 있습니다. 다자녀가주 확인해보시고 취득세 감면 혜택 받으시기 바랍니다.
+                            </p>
+                            <a href="#">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- popularity -->
+        <section class="popularity" id="popularity">
+            <div class="popularity-inner">
+                <div class="headline">
+                    <h1>현대자동차 판매량 TOP 3 </h1>
+                    <p>최근 한 달 동안 사람들의 관심과 사랑을 받으며 판매된 모델 입니다.</p>
+                </div>
+                <div class="popularity-content">
+                    <div class="popularity-images ltr wow">
+                        <img src="images/grandeur.jpg" alt="grandeur">
+                    </div>
+                    <div class="popularity-text rtl wow">
+                        <img src="images/icon-num-01.png" alt="number01">
+                        <h3>GRANDEUR PRIMIUM</h3>
+                        <ul>
+                            <li><b>모델 : </b>그랜저 자가용 스마트스트림 가솔린 2.5 Premium</li>
+                            <li><b>가격 : </b>3,355만원</li>
+                            <li><b>연비 : </b>11.9 km/ℓ</li>
+                            <li><b>최고출력 : </b>198ps / 6100rpm</li>
+                            <li><b>최대토크 : </b>25.3km·m / 4000rpm</li>
+                            <li><b>3년 유지비 : </b>12,530,597 원</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popularity-content popularity-content-two">
+                    <div class="popularity-text popularity-text-two ltr wow">
+                        <img src="images/icon-num-02.png" alt="number02">
+                        <h3>PALISADE</h3>
+                        <ul>
+                            <li><b>모델 : </b>팰리세이드 디젤 2.2 4WD 오토 Calligraphy 7인승 나파가죽</li>
+                            <li><b>가격 : </b>5,095만원</li>
+                            <li><b>연비 : </b>11.3 km/ℓ</li>
+                            <li><b>최고출력 : </b>202ps / 3800rpm</li>
+                            <li><b>최대토크 : </b>45km·m / 1750~2750rpm</li>
+                            <li><b>3년 유지비 : </b>3년 유지비 : 11,815,051 원</li>
+                        </ul>
+                    </div>
+                    <div class="popularity-images popularity-images-two rtl wow">
+                        <img src="images/palisade.jpg" alt="palisade">
+                    </div>
+                </div>
+                <div class="popularity-content">
+                    <div class="popularity-images ltr wow">
+                        <img src="images/avante.jpg" alt="avante">
+                    </div>
+                    <div class="popularity-text rtl wow">
+                        <img src="images/icon-num-03.png" alt="number03">
+                        <h3>AVANTE</h3>
+                        <ul>
+                            <li><b>모델 : </b>아반떼 자가용 가솔린 1.6 Inspiration A/T</li>
+                            <li><b>가격 : </b>2,499만원</li>
+                            <li><b>연비 : </b>14.9 km/ℓ</li>
+                            <li><b>최고출력 : </b>123ps / 6300rpm</li>
+                            <li><b>최대토크 : </b>15.7km·m / 4500rpm</li>
+                            <li><b>3년 유지비 : </b>9,193,356 원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Vision -->
+        <section class="vision" id="vision">
+            <div class="vision-inner">
+                <div class="vision-content">
+                    <div class="vision-desc">
+                        <p>
+                            자동차는 단순한 이동수단이 아닙니다.<br>
+                            누군가에게 휴식이 되고 생계를 영위하는 수단이며 가족, 친구, 연인과의 소중한 시간을 쌓는 공간입니다.
+                            <br><br>
+                            현대자동차는 고객의 평범한 일상을 공유하고, 가능성을 현실로 이루는 과정에 함께합니다.
+                        </p>
+                    </div>
+                    <div class="vision-photo">
+                        <img src="images/carrer01.jpg" alt="visioncarrer01">
+                    </div>
+                    <div class="vision-desc">
+                        <p>
+                            앞으로 무슨 일을 하고 누구와 동료가 되어 관계를 맺고 어떤 회사의 구성원이 되고 싶은지 <br><br>'무엇이 나를 움직이게 하는지' 삶에 대한 열정과 고민을 통해 이 질문에 답을 찾아내시는 당신과 함께 세상을 움직입니다.
+                        </p>
+                    </div>
+                    <div class="vision-photo">
+                        <img src="images/carrer02.jpg" alt="visioncarrer02">
+                    </div>
+                    <div class="vision-desc">
+                        <p>
+                            현대자동차에는 정말 많은 일이 있고, 그보다 더 많은 수만 명의 사람들이 있습니다.<br>
+                            그리고 하나의 제품을 위해 모두 한 마음으로 연결되어 일합니다. 우리의 일이 미칠 영향을 무겁게 인식하는 책임감, 우리의 자동차가 고객의 삶에 파트너로서 함께하는 자부심.
+                            <br><br>
+                            미래의 구성원들도 이 힘을 같이 느낄 수 있도록 우리는 끊임없이 노력할 것입니다.          
+                        </p>
+                    </div>
+                    <div class="vision-photo">
+                        <img src="images/carrer03.jpg" alt="visioncarrer03">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ -->
+        <section class="faq" id="faq">
+            <div class="faq-inner">
+                <div class="headline">
+                    <h1>자주하는 질문</h1>
+                </div>
+                <div class="faq-content">
+                    <div class="faq-left ltr wow">
+                        <div class="faq-box active">
+                            <div class="faq-title active">
+                                차량계약 후 해지 시 계약금은 환불 받을수 있습니까?
+                            </div>
+                            <div class="faq-desc">
+                                차량 출고전 해지요청시에는 계약금 환불이 가능하며,
+                                자세한 사항은 계약하신 지점(대리점)에 문의 바랍니다.
+                            </div>
+                        </div>
+                        <div class="faq-box">
+                            <div class="faq-title">
+                                장애인차량 구입조건에 대해 알고 싶습니다.
+                            </div>
+                            <div class="faq-desc">
+                                장애인 조건의 차량구입은 장애인 단독명의, 장애인과 주민등록표상 세대를 함께하는 배우자, 직계존비속,형제자매 또는 직계비속의 배우자 공동명의로 구입이 가능합니다.<br>
+                                단, 몇가지 조건이 붙는데 장애인 공동명의 조건으로 구입하신 차량은 차량출고후 5년간 동일조건(주민등록법상 동일세대)를 유지해야 하고 이 조건이 충족되지 않을때 면세받은 금액을 납부하셔야 합니다. 또한 재구입연한이 만 5년으로 되어있어 기간내에 동일차량을 계속 보유하셔야 되며, 이또한 조건 불충족시 면세받으신 세금을 납부하시게 됩니다.
+                            </div>
+                        </div>
+                        <div class="faq-box">
+                            <div class="faq-title">
+                                차량구입시 신용카드는 얼마까지 이용할 수 있나요?
+                            </div>
+                            <div class="faq-desc">
+                                자동차 구입시 신용카드를 이용한 결제는 고객님 신용카드 한도내에서 희망하시는 금액 까지 자유로이 결제가 가능합니다.
+                            </div>
+                        </div>
+                        <div class="faq-box">
+                            <div class="faq-title">
+                                세이브오토 이용에 관해 알고싶습니다.
+                            </div>
+                            <div class="faq-desc">
+                                ▶ 현대자동차 신차 구입시 현대카드M을 이용하여 선수금을 10만원 이상 결제하시는 경우 차량구매 대금중 일부를 해당포인트(20만/30만/50만)만큼 先할인해 드립니다.<br>
+                                先할인 받으신 금액은 이후 36개월 동안 고객님의 현대카드M 사용실적에 따라 적립되는 포인트로 상환하시게 되며,미상환 하신 경우 익월 카드대금 청구시 전액 청구됩니다.
+                            </div>
+                        </div>
+                        <div class="faq-box">
+                            <div class="faq-title">
+                                차량에 부과되는 세금은 어떤 종류가 있나요?
+                            </div>
+                            <div class="faq-desc">
+                                ▶ 현행 자동차관련 세금항목은 다음과 같습니다.<br>
+                                ① 구입단계 : 개별소비세(8인승 이하 승용차限), 교육세(개소세의 30%), 부가가치세<br> ② 등록단계 : 등록세,취득세 ③ 소유단계 : 자동차세(연단위 부여) <br>④ 유류관련 : 교통세, 주행세, 교육세, 부가가치세 <br> ⑤ 기타 : 공채매입, 환경개선비용부담금(해당자동차限)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-right rtl wow">
+                        <div class="faq-images">
+                            <img src="images/faqimage.jpg" alt="">
+                        </div>
+                        <h2>Hyundai Motors Question</h2>
+                        <input type="text" placeholder="궁금한점을 검색해 보세요.">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Line Up -->
+        <section class="lineup" id="lineup">
+            <div class="lineup-inner">
+                <div class="headline">
+                    <h1>현대자동차 차종 라인업</h1>
+                </div>
+                <div class="lineup-content">
+                    <div class="accordian-title">
+                        <span class="accordian-tap active" data-alt="accordian1">승용</span>
+                        <span class="accordian-tap" data-alt="accordian2">SUV</span>
+                        <span class="accordian-tap" data-alt="accordian3">MPV</span>
+                        <span class="accordian-tap" data-alt="accordian4">수소 / 전기차</span>
+                        <span class="accordian-tap" data-alt="accordian5">N/N Line</span>
+                        <span class="accordian-tap" data-alt="accordian6">소형상용&택시</span>
+                    </div>
+                    <div id="accordian1" class="accordian-desc active">
+                        <div class="accordian-images">
+                            <img src="images/lineup-avante.png" alt="lineup-avante">
+                            <h4>아반떼</h4>
+                            <p>1,570만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-sonata.png" alt="lineup-sonata">
+                            <h4>쏘나타</h4>
+                            <p>2,547만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-grangeur.png" alt="lineup-grangeur">
+                            <h4>그렌져</h4>
+                            <p>3,303만원 ~</p>
+                        </div>
+                    </div>
+                    <div id="accordian2" class="accordian-desc">
+                        <div class="accordian-images">
+                            <img src="images/lineup-venu.png" alt="lineup-venu">
+                            <h4>베뉴</h4>
+                            <p>1,662만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-cona.png" alt="lineup-cona">
+                            <h4>코나</h4>
+                            <p>1,962만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-twossan.png" alt="lineup-twossan">
+                            <h4>투싼</h4>
+                            <p>2,435만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-santape.png" alt="lineup-santape">
+                            <h4>싼타페</h4>
+                            <p>2,975만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-palishade.png" alt="lineup-palisade">
+                            <h4>펠리세이드</h4>
+                            <p>3,573만원 ~</p>
+                        </div>
+                    </div>
+                    <div id="accordian3" class="accordian-desc">
+                        <div class="accordian-images">
+                            <img src="images/lineup-starlia.png" alt="lineup-starlia">
+                            <h4>스타리아</h4>
+                            <p>2,516만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-porest.png" alt="lineup-porest">
+                            <h4>포레스트</h4>
+                            <p>4,899만원 ~</p>
+                        </div>
+                    </div>
+                    <div id="accordian4" class="accordian-desc">
+                        <div class="accordian-images">
+                            <img src="images/lineup-nexsso.png" alt="lineup-nexsso">
+                            <h4>넥쏘</h4>
+                            <p>6,765만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-ionic.png" alt="lineup-ionic">
+                            <h4>아이오닉 5</h4>
+                            <p>4,980만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-conaelictirc.png" alt="lineup-conaelectric">
+                            <h4>코나 Electric</h4>
+                            <p>4,690만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-poterelictrick.png" alt="lineup-poterelectric">
+                            <h4>포터 II Electric</h4>
+                            <p>4,060만원 ~</p>
+                        </div>
+                    </div>
+                    <div id="accordian5" class="accordian-desc">
+                        <div class="accordian-images">
+                            <img src="images/lineup-velostern.png" alt="lineup-velostern">
+                            <h4>벨로스터 N</h4>
+                            <p>3,019만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-avantenline.png" alt="lineup-avantenline">
+                            <h4>아반떼 N Line</h4>
+                            <p>2,179만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-sonatanline.png" alt="lineup-sonatanline">
+                            <h4>소나타 N Line</h4>
+                            <p>3,074만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-conanline.png" alt="lineup-conanline">
+                            <h4>코나 N Line</h4>
+                            <p>2,460만원 ~</p>
+                        </div>
+                    </div>
+                    <div id="accordian6" class="accordian-desc">
+                        <div class="accordian-images">
+                            <img src="images/lineup-sonatatexi.png" alt="lineup-sonatatexi">
+                            <h4>쏘나타 택시</h4>
+                            <p>1,945만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-grangeurtexi.png" alt="lineup-grangeurtexi">
+                            <h4>그렌져 택시</h4>
+                            <p>2,731만원 ~</p>
+                        </div>
+                        <div class="accordian-images">
+                            <img src="images/lineup-poter2.png" alt="lineup-poter2">
+                            <h4>포터 II</h4>
+                            <p>1,694만원 ~</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BLUE LINK -->
+        <section class="bluelink">
+            <div class="bluelink-inner">
+                <div class="headline">
+                    <h1>블루링크</h1>
+                    <p>블루링크와 함께 업그레이드 된 Car Life를 즐겨보세요</p>
+                </div>
+                <div class="bluelink-content">
+                    <div class="bluelink-item utd wow">
+                        <img src="images/bluelink01.png" alt="bluelink01">
+                        <h3>스마트한 드라이빙</h3>
+                        <i class="xi-checkbox-blank"></i>
+                        <ul>
+                            <li>추운 겨울, 무더운 여름에 가정이나 사무실에서도 스마트 폰으로 원격 시동 에어컨/히터 제어</li>
+                            <li>주차위치가 기억 안 날 때는 스마트폰을 이용해서 바로 지도로 확인</li>
+                        </ul>
+                    </div>
+                    <div class="bluelink-item utd wow" data-wow-delay="0.25s">
+                        <img src="images/bluelink02.png" alt="bluelink02">
+                        <h3>안전한 드라이빙</h3>
+                        <i class="xi-checkbox-blank"></i>
+                        <ul>
+                            <li>갑작스런 사고로 당황스러울 때에 SOS버튼만 누르면 사고처리 및 구난지원</li>
+                            <li>누군가 내 차에 침입해서 도난 경보가 울리면 내 휴대폰으로 문자 전송</li>
+                        </ul>
+                    </div>
+                    <div class="bluelink-item utd wow" data-wow-delay="0.5s">
+                        <img src="images/bluelink03.png" alt="bluelink03">
+                        <h3>편리한 드라이빙</h3>
+                        <i class="xi-checkbox-blank"></i>
+                        <ul>
+                            <li>네이버, 지도에서 본 위치를 메모할 필요 없이 내차로 바로 전송</li>
+                            <li>365일 언제나 버튼 하나만 누르면 상담원을 통한 목적지 설정부터 전화 연결까지</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Event -->
+        <section class="event" id="event">
+            <div class="event-inner">
+                <div class="event-content">
+                    <div class="slide-mockup ltr wow">
+                        <div class="mockupslider-items">
+                            <img src="images/slder-mockup.png" alt="mockup-image">
+                            <div class="mockupslidebox">
+                                <img src="images/event01.png" alt="event1">
+                                <img src="images/event02.png" alt="event2">
+                                <img src="images/event03.png" alt="event3">
+                                <img src="images/event04.png" alt="event4">
+                                <img src="images/event05.png" alt="event5">
+                                <img src="images/event06.png" alt="event6">
+                                <img src="images/event07.png" alt="event7">
+                                <img src="images/event08.png" alt="event8">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-text rtl wow">
+                        <h1>
+                            BENEFITS OF<br>
+                            BUYING A CAR THIS MONTH<br>
+                            <span>HYUNDAI MOTORS</span>
+                        </h1>
+                        <h2 class="video-headline">
+                            <img src="images/icon-youtube.png" alt="icon-youtube">
+                            스타리아 라운지 영상
+                        </h2>
+                        <div class="video-frame">
+                            <img src="images/staria-event.jpg" alt="user-guide">
+                            <i class="fa fa-play-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News -->
+        <section class="news" id="news">
+            <div class="news-inner">
+                <div class="headline">
+                    <h1>현대자동차그룹 최신소식</h1>
+                </div>
+                <div class="news-content">
+                    <div class="news-left ltr wow">
+                        <div class="news-text">
+                            <h2>현대자동차-항공안전기술원, 국내 도심항공교통 산업 및 인증기술 개발 MOU 체결</h2>
+                            <p>
+                                현대자동차가 국내 도심항공교통(UAM, Urban Air Mobility), 무인항공시스템(UAS, Unmanned Aerial System), 항공용 수소연료전지시스템 개발을 본격화하고 관련 생태계 조성 및 주도권 확보에 나서는 등 K-UAM 산업 발전에 박차를 가한다
+                            </p>
+                            <small>Apr22,2021</small>
+                            <a href="#none">자세히보기</a>
+                        </div>
+                    </div>
+                    <div class="news-right rtl wow">
+                        <div class="news-items">
+                            <div class="news-item">
+                                <div class="news-photo">
+                                    <img src="images/news01.jpg" alt="news">
+                                    <span class="newissue">newissue</span>
+                                </div>
+                                <p>
+                                    현대자동차-뉴뮤지엄 라이좀, 월드 온 어 와이어 ‘World on A Wire’ 展 개최
+                                </p>
+                                <small>May 07, 2021</small>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-photo">
+                                    <img src="images/news02.jpg" alt="news">
+                                    <span class="hotissue">hotissue</span>
+                                </div>
+                                <p>
+                                    UNDP(유엔개발계획)와 지속가능한 미래를 위한 솔루션 첫 공개
+                                </p>
+                                <small>May 06, 2021</small>
+                            </div>
+                        </div>
+                        <div class="news-items">
+                            <div class="news-item">
+                                <div class="news-photo">
+                                    <img src="images/news03.jpg" alt="news">
+                                    <span class="newissue">newissue</span>
+                                </div>
+                                <p>
+                                    고성능 기술 탑재 NEW Car ‘코나 N’ 세계 최초 첫 공개
+                                </p>
+                                <small>Apr 27, 2021</small>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-photo">
+                                    <img src="images/news04.jpg" alt="news">
+                                    <span class="hotissue">hotissue</span>
+                                </div>
+                                <p>
+                                    모빌리티 라이프에 최적화한 ‘Hyundai Mobility 카드’ 런칭
+                                </p>
+                                <small>Apr 26, 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="news-btn"href="#none">read more new</a>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="footerlogo">
+                    </div>
+                    <div class="copyright">
+                        <div class="policy-sns">
+                            <div class="policy">
+                                <span>
+                                    <a href="#none">개인정보취급방침</a><em>|</em>
+                                    <a href="#none">이용약관</a><em>|</em>
+                                    <a href="#none">모바일App</a><em>|</em>
+                                    <a href="#none">저작권 안내</a>
+                                </span>
+                                <span>
+                                    COPYRIGHT ⓒ HYUNDAI MOTOR COMPANY. ALL RIGHTS RESERVED.
+                                </span>
+                            </div>
+                            <div class="sns">
+                                <a href="#none"><i class="xi-facebook"></i></a>
+                                <a href="#none"><i class="xi-instagram"></i></a>
+                                <a href="#none"><i class="xi-naver"></i></a>
+                                <a href="#none"><i class="xi-kakaotalk"></i></a>
+                                <a href="#none"><i class="xi-youtube-play"></i></a>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <span>
+                                <a href="#none">윤리경영 사이버 감사실 </a><em>|</em>
+                                <a href="#none">영상정보처리기기 운영관리방침 </a><em>|</em>
+                                <a href="#none">사이트맵 </a>
+                            </span>
+                            <span>
+                                고객센터 : 080-600-6000(승용), 080-200-6000(상용)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Video iframe -->
+    <div class="iframe-box">
+        <i class="xi-close-thin close-modal"></i>
+        <div class="video-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2dNOgupfGvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- Gototop -->
+    <a href="#" class="gototop"><i class="xi-angle-up-thin"></i></a>
+</body>
+</html>
