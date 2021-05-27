@@ -43,13 +43,6 @@
     .skill-item {
         margin-bottom: 50px;
     }
-    .hcjskill-content {
-        padding: 20px;
-    }
-    .hcjskill-box {
-        width: 100%;
-        display: block;
-    }
 /* ####################### PortFolio ################# */
     .portfolio-content {
         padding: 20px;
@@ -131,80 +124,6 @@
 /* ####################### SKILL ################# */
     .skill-item span, .skill-item p {
         font-size: 16px;
-    }
-    .hcjskill-inner .headline {
-        font-size: 14px;
-    }
-    .hcjskill-content {
-        margin-top: 0;
-    }
-    .hcjskill-box {
-        height: 450px;
-    }
-    .hcjskill-desc {
-        height: 55%;
-    }
-    .hcjskill-desc h3 {
-        font-size: 18px;
-        padding-bottom: 10px;
-    }
-    .hcjskill-desc h3 em {
-        font-size: 14px;
-    }
-    .hcjskill-desc p {
-        font-size: 15px;
-        margin: 15px 0;
-    }
-    /* ####################### SUB Page Iframe ################# */
-/* iframe sub01 */
-    .subiframe-gnb {
-        width: 100%;
-        padding: 10px 5px;
-    }
-    .subiframe-gnb a {
-        font-size: 14px;
-        width: 39px;
-        margin-right: 2px;
-    }
-/* iframe sub04 */
-    .iframe04-container {
-        height: auto;
-    }
-    .iframe04-content {
-        width: 100%;
-    }
-    .iframe04-item {
-        overflow: none;
-    }
-    .iframe04-floatbox > div {
-        float: none;
-        width: 100%;
-    }
-    .iframe04-right {
-        padding-right: 0;
-        font-size: 14px;
-    }
-    /* iframe sub05 */
-    .iframe05-content {
-        width: 100%;
-    }
-    .iframe05-content label {
-        font-size: 16px;
-    }
-    .iframe05-text .iframe05-checkd, .iframe05-text p {
-        font-size: 10px;
-    }
-    /* iframe sub06 */
-    .iframe06-container {
-        height: auto;
-    }
-    .iframe06-content {
-        width: 100%;
-    }
-    .iframe06-content > div {
-        height: auto;
-        float: none;
-        width: 100%;
     }
 /* ####################### PortFolio ################# */
     .portfolio {
