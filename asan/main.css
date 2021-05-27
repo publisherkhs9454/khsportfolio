@@ -1,0 +1,779 @@
+/* ########################### fontawesome ###########################*/
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/* ########################### XE icon ###########################*/
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* ########################### Google Font ###########################*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* ########################### Reset Css ###########################*/
+* {
+    box-sizing: border-box;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+button { 
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+}
+/* ########################### Common Css ###########################*/
+body {
+    margin: 0;
+    background: #fff;
+    color: #222;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* ########################### Header ###########################*/
+/* Login header */
+.login-header {
+    background: #313334;
+}
+.login-header-inner {
+    width: 1200px;
+    margin: auto;
+} 
+.login-header-content {
+    display: flex;
+    justify-content: flex-end;
+}
+.login-nav a {
+    color: #ddd;
+    font-size: 12px;
+    display: inline-block;
+    padding: 0 10px;
+    height: inherit;
+    line-height: 38px;
+}
+.language-box {
+    display: flex;
+    height: 38px;
+    position: relative;
+    z-index: 100;
+}
+.language-box a {
+    color: #fff;
+    background: #555;
+    font-size: 14px;
+    display: inline-block;
+    width: 110px;
+    font-weight: 300;
+}
+.language-content {
+    margin-top: -5px;
+}
+.laguage-btn {
+    padding: 11px;
+    position: relative;
+}
+.laguage-btn:after {
+    content:'\f107';
+    font-family: fontawesome;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.language-item {
+    display: flex;
+    flex-direction: column;
+}
+.language-item a {
+    padding: 4px 11px;
+    border-bottom: 1px solid #ddd;
+    display: none;
+}
+.language-item a:hover {
+    color: orange;
+}
+.serch-box {
+    height: inherit;
+}
+.serch-box img {
+    height: 100%;
+}
+/* main header */
+.main-header {
+    background: #f1f1f1;
+    position: relative;
+}
+.main-header-inner {
+    width: 1200px;
+    height: 88px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    margin-top: 5px;
+}
+.gnb > ul {
+    display: flex;
+}
+.main-menu {
+    height: 88px;
+}
+.main-menu > a {
+    padding: 0 25px;
+    font-size: 18px;
+    display: inline-block;
+    height: inherit;
+    line-height: 88px;
+}
+.sub-menu-container {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    background: #fff;
+    height: 350px;  
+    border-bottom: 1px solid #ddd;
+    display: none;
+}
+.main-menu:hover > a {
+    text-decoration: underline;
+}
+.main-menu:hover .sub-menu-container {
+    display: block;
+}
+.sub-menu {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+.sub-menu > li {
+    width: 20%;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+.sub-menu > li:first-child {
+    background: #f1f1f1;
+}
+.sub-menu > li a {
+    display: block;
+}
+.sub-common {
+    font-size: 18px;
+    font-weight: 300;
+}
+.sub-common a {
+    padding: 8px 20px;
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.sub-common i {
+    float: right;
+    margin-top: 5px;
+}
+.sub-login {
+    margin-top: 40px !important;
+    border: 1px solid #0e787c;
+    color: #0e787c;
+
+}
+.sub-chart {
+    border: 1px solid orange;
+    color: orange;
+}
+.sub-reserve {
+    border: 1px solid darkblue;
+    color: darkblue;
+}
+.sub-name {
+    font-size: 20px;
+    font-weight: 300;
+}
+.sub-name i {
+    float: right;
+    margin: 6px 30px 0px 0px;
+}
+.sub-content a {
+    font-weight: 500;
+    padding: 10px 8px;
+}
+.sub-gnb a {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 3px 10px;
+}
+/* ########################### Section Wireframe ###########################*/
+.section-container {
+    border-bottom: 1px solid #ddd;
+}
+.section-inner {
+    width: 1200px;
+    margin: auto;
+    height: inherit;
+    display: flex;
+    height: 150%;
+    border-left: 1px solid #ddd;
+}
+section {
+    width: 25%;
+    border-right: 1px solid #ddd;
+}
+.section-title {
+    border-bottom: 1px solid #ddd;
+}
+/* ########################### Section style ###########################*/
+/* headline */
+.headline {
+    padding: 30px 30px 50px 30px;
+}
+.headline h2 {
+    font-weight: 300;
+    font-size: 22px;
+    color: #666;
+    position: relative;
+}
+.headline h2 b {
+    display: block;
+    font-size: 30px;
+    color: #111;
+}
+.headline h2:before {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 3px;
+    background: #499c9c;
+    bottom: -20px;
+}
+/* section-titleimage */
+.section-titleimage {
+    height: 280px;
+    cursor: pointer;
+}
+.section-titleimage img {
+    width: 100%;
+    height: 100%;
+}
+/* reservation */
+.reservation {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.reservation h3 {
+    margin-bottom: 7px;
+    color:#0e787c;
+    font-weight: 500;
+}
+.reservation span {
+    font-size: 14px;
+}
+.reservation-content {
+    margin-top: 25px;
+}
+.reservation-content:before,
+.reservation-content:after {
+    content: '';
+    display: block;
+}
+.reservation-content:after {
+    clear: both;
+}
+.reservation-content > div {
+    float: left;
+}
+.reservation-image {
+    text-align: center;
+    width: 40%;
+}
+.reservation-image img {
+    margin-top: 15px;
+}
+.reservation-desc {
+    width: 60%;
+}
+.reservation-desc a {
+    font-size: 13px;
+    display: block;
+    width: 135px;
+    padding: 0px 5px;
+    height: 25px;
+    line-height: 25px;
+    background: #666;
+    color: #fff;
+    margin-bottom: 8px;
+    transition: 0.5s;
+}
+.reservation-desc a:hover {
+    background: #ddd;
+    color: #333;
+}
+/* department */
+.department {
+    padding: 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+.department h3 {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.department span {
+    font-size: 13px;
+    color: #555
+}
+.department-content {
+    margin-top: 30px;
+}
+.department-content a {
+    display: inline-block;
+    width: 35%;
+    border: 1px solid #aaa;
+    margin: 2px 5px;
+    font-size: 14px;
+    text-align: center;
+    padding: 2px 0px;
+    background: #fff;
+    transition: 0.5s;
+}
+.department-content a:hover {
+    background: #555;
+    color: #fff;
+}
+.department-image {
+    float: right
+}
+/* section-checkup */
+.checkup {
+    padding: 20px;
+    overflow: hidden;
+}
+.checkup h3 {
+    margin: 0;
+}
+.checkup span {
+    font-size: 14px;
+    color: #666;
+}
+.checkup p {
+    font-size: 20px;
+    color: #0e787c;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.checkup-image {
+    float: right;
+}
+/* section-titletext */
+.section-titletext {
+    overflow: hidden;
+}
+.section-titletext > div {
+    float: left;
+}
+.title-text {
+    width: 50%;
+}
+.title-image {
+    width: 50%;
+}
+.section-titletext h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 25px 0px 35px 20px;
+}
+.section-titletext a {
+    color: #fff;
+    display: block;
+    width: 70%;
+    font-size: 14px;
+    height: 25px;
+    font-weight: 300;
+    margin: 8px 25px;
+    line-height: 25px;
+    padding-left: 7px;
+}
+.title-text01 {
+    background: #FFA94C;
+    border-top-right-radius: 10px;
+}
+.title-text02 {
+    background: #666;
+}
+.title-imagetwo {
+    margin-top: 60px;
+}
+.title-image img {
+    width: 100%;
+}
+/* section-healthtv */
+.healthtv {
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+.healthtv h3 {
+    font-weight: 500;
+    margin: 0;
+}
+.healthtv p {
+    color: #555;
+    font-size: 15px;
+}
+/* section-health-course */
+.health-course {
+    overflow: hidden;
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.health-course > div {
+    float: left;
+}
+.health-course-content {
+    width: 63%;
+}
+.health-course-content h3 {
+    font-weight: 500;
+    margin: 0;
+}
+.health-course-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+.health-course-content a {
+    font-size: 14px;
+    padding: 3px 12px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.health-course-content a:hover {
+    background: #555;
+    color: #fff;
+}
+.health-course-image {
+    width: 37%;
+}
+.health-course-image img {
+    margin-top: 30px;
+}
+/* section-acadenic */
+.academic {
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.academic h3 {
+    margin: 0;
+    font-weight: 500;
+}
+.academic p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+.academic-box {
+    overflow: hidden;
+}
+.academic-box > div {
+    float: left;
+}
+.academic-link {
+    width: 55%;
+}
+.academic-link a {
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 3px 12px;
+    border: 1px solid #ddd;
+    transition: 0.5s;
+} 
+.academic-link a:hover {
+    color: #fff;
+    background: #555;
+}
+.academic-image {
+    width: 45%;
+}
+/* section-medicne */
+.medicne {
+    padding: 30px;
+}
+.medicne h3 {
+    margin: 0;
+    font-weight: 500;
+}
+.medicne p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+.medicne img {
+    cursor: pointer;
+}
+/* section-location */
+.location {
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+.location h3 {
+    font-weight: 500;
+    margin: 0;
+}
+.location p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+/* section-call */
+.call {
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.call span {
+    font-size: 18px;
+}
+.call h2 {
+    font-size: 36px;
+    color:#0e787c;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.reservation-number {
+    background: #f1f1f1;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+.reservation-number h4 {
+    font-size: 15px;
+    font-weight: 400;
+    color:#0e787c;
+    margin-bottom: 10px;
+}
+.reservation-number ul {
+    list-style: disc;
+    margin-left: 10px;
+}
+.reservation-number li {
+    font-size: 14px;
+    font-weight: 300;
+}
+.reservation-number li b {
+    font-weight: 500;
+}
+/* section-facility */
+.facility {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 35px;
+    cursor: pointer;
+}
+/* section-puneral */
+.funeral {
+    padding: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.funeral h3 {
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0;
+}
+.funeral p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+.funeral img {
+    float: right
+}
+/* section-document */
+.document-box {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+.document-box img {
+    float: left;
+}
+.document-box a {
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px 0px 0px 15px;
+}
+.document-box a:hover {
+    text-decoration: underline;
+}
+/* infomation */
+.infomation-content {
+    text-align: center;
+    padding-top: 50px;
+}
+.infomation-item {
+    display: inline-block;
+    width: 40%;
+    background: #f5f5f5;
+    margin: 0 8px 15px 0;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.infomation-item a {
+    display: block;
+    font-size: 14px;
+}
+.infomation-item:hover a {
+    text-decoration: underline;
+}
+/* ########################### aside Css ###########################*/
+aside {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.aside-inner {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    padding: 0 15px;
+}
+.aside-content {
+    width: 50%;
+    display: flex;
+}
+.aside-title {
+    margin: 0px 30px;
+    width: 15%;
+}
+.aside-title h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.aside-title > a {
+    font-size: 14px;
+    color: #db330c;
+}
+.aside-desc {
+    width: 85%;
+    cursor: pointer;
+}
+.aside-desc ul li {
+    font-size: 15px;
+    line-height: 1.6em;
+}
+.aside-desc ul li a {
+    color: #555;
+}
+.aside-desc ul li span {
+    float: right;
+}
+.aside-desc ul li:hover {
+    text-decoration: underline;
+}
+/* ########################### footer ###########################*/
+footer {
+    background: #7e8389;
+
+}
+.footer-inner {
+    width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+.footer-content01 {
+    overflow: hidden;
+}
+.footerlogo {
+    float: left;
+    width: 15%;
+}
+.footer-menu {
+    float: right;
+    width: 85%;
+}
+.footer-menu li {
+    display: inline-block;
+    margin: 3px;
+}
+.footer-menu a {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 300;
+}
+.footer-menu em {
+    font-style: normal;
+    color: #fff;
+    font-size: 11px;
+}
+.footer-menu li:nth-child(2) a {
+    color: orange;
+}
+.footer-menu li a:hover {
+    text-decoration: underline;
+}
+.footer-content02 {
+    margin-top: 30px;
+    display: flex;
+}
+.adress {
+    width: 41%;
+}
+.adress span {
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-right: 30px;
+}
+.select-content {
+    margin-left: 60px;
+    margin-top: 15px;
+}
+.select-box {
+    display: inline-block;
+    width: 40%;
+}
+.select-item {
+    width: 170px;
+    height: 25px;
+    outline: none;
+    margin-bottom: 5px;
+}
+.select-item option {
+    font-size: 13px;
+}
+.select-box a {
+    font-size: 12px;
+    padding: 2px 10px;
+    background: #333;
+    color: #fff;
+}
+.footer-banner {
+    margin-right: 30px;
+}
+.footer-banner img {
+    filter: grayscale();
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.footer-banner img:hover {
+    filter: grayscale(0);
+}
+/* ########################### slick CSS ###########################*/
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.slick-dots {
+    bottom: 8px;
+}
+.slick-dots li {
+    width: 10px;
+}
+.slick-dots li button:before {
+    font-size: 28px;
+}
