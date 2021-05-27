@@ -1,0 +1,538 @@
+@media screen and ( max-width : 1024px) {
+/* ################################ Home ########################## */
+.home-title span {
+font-size: 70px;
+}
+.home-title span:nth-child(2) {
+font-size: 120px;
+}
+/* ################################ About ########################## */
+.about-items {
+	width: 70%;
+}
+.about-item {
+	overflow: hidden;
+}
+.about-item img {
+	width: 20%;
+	margin: 0;
+	padding-right: 10px;
+}
+.about-item div {
+	width: 80%;
+	float: right;
+}
+/* ################################ Artist ########################## */
+
+.artist-inner {
+    height: auto;
+}
+.tab-item > div {
+    font: none;
+    width: 100%;
+}
+.artist-tabs {
+    position: static;
+}
+.artist-title {
+    padding: 20px;
+    padding-top: 15px;
+    border-right: 1px solid #ddd;
+}
+.artist-btn {
+    left: 0%;
+    bottom: 64%;
+    width: 100%;
+
+}
+input[id="tab1"]:checked ~ .tab-inner .artist-tabs {
+    margin: 0;
+}
+input[id="tab2"]:checked ~ .tab-inner .artist-tabs {
+    margin-left: -100%;
+}
+input[id="tab3"]:checked ~ .tab-inner .artist-tabs {
+    margin-left: -200%;
+}
+/* ################################ FAQ ########################## */
+.accordion-box h4 {
+    font-size: 16px;
+}
+.accordion-box p {
+    font-size: 12px;
+}
+/* ################################ Recruit ########################## */
+.recruit-items {
+    width: 100%;
+}
+.recruit-items h3 {
+    font-size: 26px;
+}
+.recruit-items p {
+    font-size: 16px;
+}
+/* ################################ Audition ########################## */
+.onlinefield {
+    margin: 50px 0;
+    width: 100%;
+    height: auto;
+}
+/* ################################ Artist TWICE ###################### */
+.artistjyp-profile.artisttwice-profile .profile-inner {
+    width: 50%;
+    display: inline-block;
+}
+}
+
+@media screen and ( max-width : 768px) {
+/* ################################ Lay Out ########################## */
+.cd-section {
+    height: auto;
+}
+.cd-section > div {
+    height: auto;
+}
+.content {
+    position: static;
+    width: 100%;
+    height: 100%;
+}
+/* ################################ Header ########################## */
+header {
+    z-index: 101;
+}
+header.active {
+    background: #fff;
+}
+.header-inner {
+    height: inherit;
+    width: calc( 100% - 40px );
+    margin: 0 auto;
+}
+.logo {
+    height: inherit;
+    float: left;
+}
+.logo img {
+    height: 100%;
+}
+.gnb {
+    background: #fff;
+    position: fixed;
+    width: 220px;
+    top: 0;
+    right: -270px;
+    height: 100vh;
+    transition: 0.5s;
+    box-shadow: 3px 3px 50px #999;
+    padding-top: 50px;
+}
+.gnb.active {
+    right: 0;
+}
+.menu {
+    display: block;
+}
+.menu a {
+    display: block;
+    font-size: 19px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 20px;
+}
+.slogan {
+    display: none;
+}
+/* Trigger btn Css */
+.trigger {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+.trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transition: 0.5s;
+}
+.trigger span:nth-child(1) {
+    top: 0;    
+}
+.trigger span:nth-child(2) {
+    top: 50%;
+    width: 90%;   
+}
+.trigger span:nth-child(3) {
+    top: 100%;   
+}
+.trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+.trigger.active span:nth-child(2) {
+    opacity: 0;
+}
+.trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+/* Gototop btn Css */
+.gototop {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: -100px;
+    left: 35px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    transition: 0.5s;
+}
+.gototop.active {
+    bottom: 30px;
+}
+.gototop img {
+    margin-top: 5px;
+}
+/* ################################ Home ########################## */
+
+.home-inner {
+    height: 100vh;
+}
+.welcome-text {
+    font-size: 70px;
+}
+.welcome-text span {
+    font-size: 35px;
+}
+.home-title {
+    left: 0;
+}
+.home-title span {
+    font-size: 40px;
+}
+.home-title span:nth-child(2) {
+    font-size: 80px;
+}
+
+/* ################################ About ########################## */
+
+.about-inner {
+    height: auto;
+    padding: 20px;
+}
+.about-inner h1 {
+    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.about-items {
+    position: static;
+    width: 100%;
+    transform: translateX(0);
+}
+.about-item {
+    margin: 0;
+    padding-bottom: 30px;
+} 
+.about-item img {
+    float: none;
+    margin-bottom: 20px;
+}
+.about-item div p {
+    font-size: 14px;
+}
+/* ################################ Artist ########################## */
+.artist-inner {
+    height: auto;
+    padding: 50px 0;
+}
+.artist-tabs {
+    position: static;
+    margin: 0;
+}
+.artist-btn {
+    width: 100%;
+    bottom: 20px;
+}
+.tab-item > div {
+    float: none;
+    width: 100%;
+}
+.viewmore {
+    width: 90%;
+}
+.viewmore .fa {
+    right: 50px;
+}
+input[id="tab1"]:checked ~ .tab-inner .artist-tabs {
+    margin: 0;
+}
+input[id="tab2"]:checked ~ .tab-inner .artist-tabs {
+    margin-left: -100%;
+}
+input[id="tab3"]:checked ~ .tab-inner .artist-tabs {
+    margin-left: -200%;
+}
+/* ################################ History ########################## */
+
+.history-inner {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+
+}
+.history-items {
+    width: 100%;
+    position: static;
+    transform: translate(0);
+}
+.planning {
+    padding: 80px 0 40px 0;
+}
+.planning-title {
+    float: none;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0;
+    font-size: 15px;
+}
+.planning img {
+    width: 100%;
+    height: 300px;
+}
+
+.history-items hr {
+    margin: 20px auto;
+}
+
+/* ################################ FAQ ########################## */
+.faq-inner {
+    height: auto;
+    padding: 60px 20px;
+}
+.faq-inner > div {
+    float: none;
+    width: 100%;
+}
+.accordion {
+    padding-top: 10px;
+}
+.accordion-items {
+    position: static;
+    width: 100%;
+    transform: translate(0);
+}
+.accordion-box h4 {
+    font-size: 13px;
+    font-weight: 600;
+}
+.faq-image img {
+    position: static;
+    margin-top: 35px;
+    transform: translate(0);
+}
+.accordion-text {
+    font-size: 12px;
+}
+/* ################################ Recruit ########################## */
+.recruit-inner {
+    height: auto;
+    padding: 50px 20px;
+}
+.recruit-items {
+    position: static;
+    width: 100%;
+    transform: translate(0);
+}
+.recruit-items > div {
+    float: none;
+    width: 100%;
+}
+.recruit-items h3 {
+    margin-top: 0;
+    padding-top: 15px;
+    font-size: 22px;
+}
+.resources {
+    margin: 0;
+    padding-right: 0;
+}
+.resources p {
+    font-size: 14px;
+}
+.benefit div {
+    margin: 20px auto;
+    text-align: center;
+    width: 70%;
+    display: block;
+}
+/* ################################ Contact ########################## */
+.contact-inner {
+    height: auto;
+    padding: 20px;
+}
+.contact-box {
+    position: static;
+    width: 100%;
+    transform: translate(0);
+    margin-top: 40px;
+}
+.contact-box > div {
+    float: none;
+    width: 100%;
+}
+.contact-info {
+    padding-right: 0;
+}
+.contact-info h3 {
+    font-size: 24px;
+}
+form input[type=email],
+form input[type=text],
+textarea, 
+.contact-btn {
+    width: 100%;
+}
+.contact-text {
+    margin-top: 40px;
+}
+.contact-text img {
+    width: 100%;
+}
+/* ################################ Audition ########################## */
+.audition {
+    bottom: 20px;
+    right: 20px;
+    font-size: 13px;
+    width: 90px;
+    height: 30px;
+}
+.audition-header {
+    font-size: 14px;
+}
+.audition-title h1  {
+    font-size: 40px;
+}
+.online {
+    margin: 50px 0;
+}
+.online h2,
+.offline h2 {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: monoton;
+}
+.online hr,
+.offline hr {
+    width: 70px;
+}
+.onlinefield {
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+.field-box {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+}
+.field-text {
+    position: static;
+    background: #eee;
+    width: inherit;
+    z-index: -10;
+}
+.field-text h4 {
+    margin-top: 0;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.online-writing h3 {
+    font-size: 20px;
+}
+.offline {
+    padding: 40px 30px;
+    margin-top: 30px;
+}
+.online-writing p {
+    font-size: 14px;
+}
+.offline-inner > div {
+    float: none;
+    width: 100%;
+}
+.offline li {
+    font-size: 14px;
+}
+/* ################################ SubPage -Artist JYP ########################## */
+.jypheader {
+    width: 100%;
+} 
+.artistjyp-title {
+    width: 100%;
+}
+.artistjyp-title h1 {
+    font-size: 40px;
+}
+.artistjyp-title:before {
+    font-size: 16px;
+    top: 15%;
+}
+.artistjyp-title .artist-sns a {
+    font-size: 16px;
+}
+.artistjyp-profile h2 {
+    font-size: 35px;
+}
+.profile-inner {
+    height: auto;
+}
+.profile-images {
+    width: 100%;
+    height: auto;
+}
+.profile-title {
+    width: 100%;
+    position: static;
+    transform: rotate(-15deg) translateX(0);
+}
+.profile-title h3 {
+    font-size: 22px;
+}
+.album {
+    padding: 30px 20px;
+}
+.albumlist {
+    width: 100%;
+    font-size: 14px;
+    border-left: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    overflow: hidden;
+}
+
+
+    /* ################################ SubPage -Artist TWICE ########################## */
+
+.artistjyp-title.artisttwice-title:before {
+    font-size: 16px;
+    top: 15%;
+}
+.artistjyp-profile.artisttwice-profile .profile-inner {
+    width: 100%;
+    display: block;
+}
+/* ################################ SubPage -Artist ITZY ########################## */
+.artistjyp-title.artistitzy-title:before {
+    font-size: 16px;
+    top: 15%;
+}
+
+}

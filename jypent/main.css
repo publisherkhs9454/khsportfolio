@@ -1,0 +1,1252 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+/* Fontawesome */
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/* Reset Css */
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a { 
+    text-decoration: none;
+    color: #222;
+}
+input,button,textarea { 
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+/* Default Css */
+body {
+    margin: 0;
+    color: #222;
+    height: 100vh;
+    background: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* LayOut Css */
+.cd-section {
+    height: 100vh;
+}
+.cd-section > div {
+    height: 100%;
+    position: relative;
+}
+.content {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: calc( 100% - 40px );
+    height: calc( 100% - 80px );
+    background: #ddd;
+    overflow: hidden;
+}
+/* ################################ Header ########################## */
+header {
+    height: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+.header-inner {
+    height: inherit;
+    width: calc( 100% - 40px );
+    margin: 0 auto;
+}
+.logo {
+    height: inherit;
+    float: left;
+}
+.logo img {
+    height: 100%;
+}
+.gnb {
+    float: right;
+}
+.menu {
+    display: none;
+}
+.slogan {
+    font-style: italic;
+    line-height: 60px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+/* ################################ Home ########################## */
+
+.home-inner {
+    height: 100%;
+    position: relative;
+    background: #fff;
+}
+.home-inner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #000;
+    -webkit-animation: curtain 1s 3s linear;
+    -moz-animation: curtain 1s 3s linear;
+    -ms-animation: curtain 1s 3s linear;
+    -o-animation: curtain 1s 3s linear;
+    animation: curtain 1s 3s linear;
+}
+.welcome-text {
+    font-family: 'Monoton', cursive;
+    font-size: 120px;
+    color: #00A3DF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-animation: welcome 3s ease-in-out both;
+    -moz-animation: welcome 3s ease-in-out both;
+    -ms-animation: welcome 3s ease-in-out both;
+    -o-animation: welcome 3s ease-in-out both;
+    animation: welcome 3s ease-in-out both;
+}
+.welcome-text span {
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.opacity-image {
+    background: url(images/home-bg.jpg) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-animation: opacityimg 1s 3.5s ease-in both;
+    -moz-animation: opacityimg 1s 3.5s ease-in both;
+    -ms-animation: opacityimg 1s 3.5s ease-in both;
+    -o-animation: opacityimg 1s 3.5s ease-in both;
+    animation: opacityimg 1s 3.5s ease-in both;
+}
+.opacity-image:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.733);
+}
+.home-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 150px;
+}
+.home-title span {
+    color: #fff;
+    display: block;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-animation: hometitle 1s 4.5s ease-in both;
+    -moz-animation: hometitle 1s 4.5s ease-in both;
+    -ms-animation: hometitle 1s 4.5s ease-in both;
+    -o-animation: hometitle 1s 4.5s ease-in both;
+    animation: hometitle 1s 4.5s ease-in both;
+    overflow: hidden;
+}
+.home-title span:nth-child(1) {
+    animation-delay: 4.5s;
+}
+.home-title span:nth-child(2) {
+    animation-delay: 4.7s;
+    font-size: 150px;
+}
+.home-title span:nth-child(3) {
+    animation-delay: 4.9s;
+}
+@keyframes welcome {
+    0% {
+        opacity: 0;
+        top: 60%;
+    }
+    50% {
+        opacity: 1;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes curtain {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 100%;   
+        left: 100%;
+    }
+}
+@keyframes opacityimg {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes hometitle {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+/* ################################ About ########################## */
+
+.about-inner {
+    height: 100%;
+    background: linear-gradient(to top, #f5f7fa, #c3cfe2);
+    position: relative;
+    color: #333;
+}
+.about-inner h1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 500;
+    padding-top: 30px;
+    font-family: 'Monoton', cursive;
+}
+.about-inner h1 b {
+    font-weight: 900;
+    color: #00A3DF;
+}
+.about-items {
+    width: 58%;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+.about-item:hover img {
+    transform: scale(0.7);
+}
+.about-item:hover {
+    transform: scale(1.1);
+}
+.about-item img {
+    height: 100px;
+    float: left;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+.about-item div h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.about-item div p {
+    line-height: 1.5em;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* ################################ Artist ########################## */
+
+/* Artist Lay Out */
+input[type="radio"] {
+    display: none;
+}
+.artist-inner {
+    height: 100%;
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.tab-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.artist-tabs {
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.tab-item {
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+}
+.tab-item > div {
+    height: 100%;
+    float: left;
+}
+.artist-title {
+    width: 25%;
+}
+.artist-image {
+    width: 75%;
+    overflow: hidden;
+}
+.artist-btn {
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    width: 25%;
+    text-align: center;
+}
+.artist-btn label{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #000;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+}
+input[id="tab1"]:checked ~ .tab-inner .artist-tabs {
+    left: 0;
+}
+input[id="tab2"]:checked ~ .tab-inner .artist-tabs {
+    left: -100%;
+}
+input[id="tab3"]:checked ~ .tab-inner .artist-tabs {
+    left: -200%;
+}
+input[id="tab1"]:checked ~ .artist-btn label[for="tab1"] {
+    background: dodgerblue;
+}
+input[id="tab2"]:checked ~ .artist-btn label[for="tab2"] {
+    background: dodgerblue;
+}
+input[id="tab3"]:checked ~ .artist-btn label[for="tab3"] {
+    background: dodgerblue;
+}
+
+/* Artist CSS */
+.artist-title {
+    padding: 20px;
+    padding-top: 60px;
+    border-right: 1px solid #ddd;
+}
+.artist-title h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    color: #000;
+}
+.artist-title h3:before {
+    content:attr(data-text);
+    color: rgba(0, 0, 0, 0.095);
+    position: absolute;
+    font-size: 60px;
+    top: -30px;
+    left: 10px;
+}
+.artist-title p {
+    font-size: 14px;
+    line-height: 1.7em;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.artist-title ul {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.7em;
+}
+.artist-title ul li:before {
+    content: '\f105';
+    font-family: fontawesome;
+    margin-right: 5px;
+}
+.artist-sns {
+    text-align: center;
+    margin-top: 50px;
+}
+.artist-sns a {
+    font-size: 18px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+    overflow: hidden;
+    position: relative;
+}
+.artist-sns a .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s;
+    transform: translate(-50%, -50%) rotateY(0);
+}
+.artist-sns a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 105%;
+    background: #000;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+}
+.artist-sns a:hover .fa {
+    transform: translate(-50%, -50%) rotateY(360deg);
+}
+.artist-sns a:nth-child(1):before {
+    background: #e4405f;
+}
+.artist-sns a:nth-child(2):before {
+    background: #55acee;
+}
+.artist-sns a:nth-child(3):before {
+    background: #3b5999;
+}
+.artist-sns a:nth-child(4):before {
+    background: #cd201f;
+}
+.artist-sns a:nth-child(1):hover,
+.artist-sns a:nth-child(2):hover, 
+.artist-sns a:nth-child(3):hover,
+.artist-sns a:nth-child(4):hover {
+    color: #fff;
+    transform: rotateX(360deg);
+}
+.artist-sns a:nth-child(1):hover:before,
+.artist-sns a:nth-child(2):hover:before,
+.artist-sns a:nth-child(3):hover:before,
+.artist-sns a:nth-child(4):hover:before {
+    top: 0;
+}
+.viewmore {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 8px 50px;
+    border: none;
+    background: #343434;
+    color: #fff;
+    font-weight: 200;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+.viewmore .fa {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    transition: 0.5s;
+}
+.viewmore:hover {
+    background: #000;
+}
+.viewmore:hover .fa {
+    right: 10px;
+}
+.artist-image {
+    text-align: center;
+}
+/* ################################ History ########################## */
+.history-inner {
+    height: 100%;
+    background: #1D1B24;
+    color: #fff;
+    position: relative;
+}
+.history-items {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.history-items h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.history-items hr {
+    width: 80px;
+    margin: 20px 0;    
+    border: none;
+    height: 5px;
+    background: #00A3DF;
+}
+.planning {
+    overflow: hidden;
+}
+.planning-title {
+    float: left;
+    width: 70%;
+    line-height: 1.7em;
+    padding-right: 50px;
+}
+.planning img {
+    width: 30%;
+    height: 270px;
+}
+.sliderbox {
+    padding-right: 20px;
+}
+.sliderbox h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00A3DF;
+}
+/* Slick,js Custom CSS */
+.history .slick-arrow {
+    display: none !important;
+}
+.history .slick-dots {
+    bottom: -40px;
+}
+.history .slick-dots li button:before {
+    color: #fff;
+    font-size: 40px;
+}
+.history .slick-dots li {
+    margin: 0;
+} 
+/* ################################ FAQ ########################## */
+.faq-inner {
+    height: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.faq-inner > div {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.accordion {
+    position: relative;
+}
+.accordion-items {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+.accordion-items h3 {
+    border-bottom : 2px solid #000;
+    padding : 15px 0;
+}
+.accordion-box {
+    border-bottom: 1px solid #ddd;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.accordion-box h4 {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px 0;
+    position: relative;
+}
+.accordion-box h4:after {
+    content: '\f107';
+    font-family: fontawesome;
+    position: absolute;
+    top: 30%;
+    color: rgb(223, 161, 48);
+    font-weight: 900;
+    right: 2%;
+}
+.accordion-box h4 span {
+    color: #00A3DF;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.accordion-text {
+    border-top: 1px dotted #555;
+    border-bottom: 1px dotted #555;
+    height: 100px;
+    background: #eee;
+    display: none;
+    line-height: 1.7em;
+}
+.accordion-text.active {
+    display: block;
+}
+.faq-image {
+    position: relative;
+}
+.faq-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 92%;
+    border-radius: 30% 20% 50% 15% / 27% 59% 24% 30% ;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 20px #555;
+}
+/* ################################ Recruit ########################## */
+.recruit-inner {
+    height: 100%;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+    background: url(images/recruuit.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+.recruit-inner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    height: 100%;
+    background: rgba(0, 0, 0, 0.788);
+}
+.recruit-items {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.recruit-items h3 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.recruit-items h3 b {
+    color: #00A3DF;
+}
+.recruit-items > div {
+    float: left;
+}
+.resources {
+    padding-right: 50px;
+    width: 40%;
+    margin-top: 40px;
+}
+.resources p {
+    font-size: 18px;
+    line-height: 1.7em;
+}
+.benefit {
+    width: 60%;
+}
+.benefit div {
+    width: 22%;
+    height: 170px;
+    border-radius: 20% 40% 40% 40%;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    margin: 10px;
+    background: linear-gradient(130deg, gold, transparent);
+    box-shadow: 0px 0px 5px #ccc;
+}
+.benefit p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 15px;
+}
+/* ################################ Contact ########################## */
+
+.contact-inner {
+    height: 100%;
+    background: #fff;
+    position: relative;
+    border: 1px solid #ccc;
+}
+.contact-box {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact-box em {
+    color: crimson;
+}
+.contact-box > div {
+    float: left;
+    width: 50%;
+}
+.contact-info {
+    padding-right: 60px;
+}
+.contact-info h3 {
+    font-weight: 300;
+    font-size: 34px;
+    margin-bottom: 13px;
+}
+.contact-info h3 b {
+    font-weight: 600;
+}
+.contact-info p {
+    margin-bottom: 10px;
+}
+form label {
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+form input[type=email],
+form input[type=text] {
+    width: 92%;
+    border: 1px solid #bbb;
+    height: 30px;
+    border-radius: 5px;
+}
+form input[type=email]:focus,
+form input[type=text]:focus,
+textarea:focus {
+    border: 1px solid #55acee;
+    box-shadow: 3px 3px 10px #55acee;
+}
+textarea {
+    width: 92%;
+    height: 100px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+.contact-btn {
+    display: block;
+    width: 130px;
+    height: 40px;
+    border: none;
+    background: dodgerblue;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 25px;
+    font-size: 11px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px #bbb;
+    cursor: pointer;
+}
+.contact-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.contact-text ul {
+    margin-bottom: 8px;
+}
+.contact-text ul li {
+    font-size: 15px;
+    line-height: 1.5em;
+}
+.contact-text p {
+    margin-bottom: 8px;
+}
+.contact-text img {
+    height: 200px;
+    margin-top: 10px;
+}
+/* ################################ Audition ########################## */
+.audition {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    background: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px #555;
+}
+/* ON LINE */
+.audition-header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 101;
+}
+.adn-headerinner {
+    width: calc( 100% - 40px );
+    margin: 0 auto;
+    height: 100%;
+    border-bottom:  1px solid #bbb;
+}
+.adn-headerinner h3 {
+    line-height: 80px;
+    font-weight: 300;
+}
+.audition-title {
+    height: 73vh;
+    text-align: center;
+    background: url(images/auditionbg.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.audition-title:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.644);
+}
+.audition-title h1 {
+    padding-top: 250px;
+    font-size: 65px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    text-shadow: 3px 3px 3px #fff;
+    -webkit-animation: adntitle 1.5s linear both;
+    -moz-animation: adntitle 1.5s linear both;
+    -ms-animation: adntitle 1.5s linear both;
+    -o-animation: adntitle 1.5s linear both;
+    animation: adntitle 1.5s linear both;
+}
+.audition-title h1 span {
+    display: block;
+}
+.online {
+    margin: 90px 0;
+    padding: 30px;
+}
+.online h2,
+.offline h2 {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: monoton;
+}
+.online hr,
+.offline hr {
+    margin: 25px 0;
+    width: 100px;
+    border: none;
+    height: 5px;
+    background: crimson;
+}
+.onlinefield {
+    margin: 50px 0;
+    width: 80%;
+    height: 1000px;
+}
+.field-box {
+    width: 270px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    margin-right: 100px;
+    margin-bottom: 200px;
+}
+.field-title {
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.field-title:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.568);
+}
+.field-title h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    line-height: 300px;
+}
+.vocal {
+    background-image: url(images/vocal.jpg);
+}
+.dance {
+    background-image: url(images/dance.jpg);
+}
+.rap {
+    background-image: url(images/rap.jpg);
+}
+.acting {
+    background-image: url(images/acting.jpg);
+}
+.model {
+    background-image: url(images/model.jpg);
+}
+.field-text {
+    text-align: center;
+    position: absolute;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    transition: 0.5s;
+    top: 0%;
+    background: #eee;
+    left: 0%;
+    width: inherit;
+    height: 150px;
+    z-index: -10;
+}
+.field-text h4 {
+    margin: 15px 0;
+    font-size: 17px;
+}
+.field-text li {
+    font-size: 13px;
+    line-height: 1.7em;
+}
+.field-box:hover .field-text{
+    top: 100%;
+}
+.online-writing {
+    padding: 100px 0;
+    background: #eee;
+}
+.online-writing h3 {
+    margin: 20px 0;
+    font-size: 29px;
+    font-weight: 600;
+}
+.online-writing p {
+    font-size: 16px;
+    line-height: 1.7em;
+}
+
+
+/* OFF LINE */
+.offline-inner > div {
+    float: left;
+    width: 50%;
+}
+.auditioncenter img {
+    width: 80%;
+    margin-left: 30px;
+    height: 80%;
+    border-radius: 30% 20% 50% 15% / 27% 59% 24% 30% ;
+}
+.offline {
+    float: right;
+    padding: 30px;
+    margin: 90px 0;
+}
+.offline h2 {
+    margin: 20px 0;
+}
+.offline li {
+    line-height: 1.9em;
+    font-size: 20px;
+}
+.offline li b {
+    color: #55acee;
+}
+
+@keyframes adntitle {
+    0% {
+        opacity: 0;
+        padding-top: 150px;
+    }
+    100% {
+        opacity: 1;
+        padding-top: 250px;
+    }
+}
+/* ################################ Artist JYP ########################## */
+.jypheader {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 101;
+}
+.jyp-headerinner {
+    width: calc( 100% - 40px );
+    margin: 0 auto;
+    height: 100%;
+    border-bottom:  1px solid #bbb;
+}
+.jyp-headerinner h3 {
+    line-height: 80px;
+    font-weight: 300;
+}
+.artistjyp-title {
+    height: 100vh;
+    background: url(images/subpagejypbg.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.artistjyp-title h1 {
+    padding-top: 250px;
+    font-size: 65px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 3px 3px 3px #55acee;
+    text-align: center;
+    -webkit-animation: adntitle 1.5s linear both;
+    -moz-animation: adntitle 1.5s linear both;
+    -ms-animation: adntitle 1.5s linear both;
+    -o-animation: adntitle 1.5s linear both;
+    animation: adntitle 1.5s linear both;
+}
+.artistjyp-title:before {
+    content:'박진영 PD';
+    position: absolute;
+    top: 10%;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 3px 3px 3px #55acee;
+}
+.artistjyp-title .artist-sns {
+    position: absolute;
+    bottom: 3%;
+}
+.artistjyp-title .artist-sns a {
+    color: #fff;
+    font-size: 20px;
+}
+.artistjyp-profile {
+    padding: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+.artistjyp-profile h2 {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: monoton;
+    color: #55acee;
+}
+.artistjyp-profile hr {
+    margin: 30px auto;
+    margin-bottom: 70px;
+    width: 100px;
+    border: none;
+    height: 5px;
+    background: crimson;
+}
+.profile-inner {
+    position: relative;
+    height: 700px;
+    width: 100%;
+}
+.profile-images {
+    width: 460px;
+    height: 580px;
+    margin: 0 auto;
+    position: relative;
+}
+.profile-images:before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: -28px;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    background: rgb(219, 196, 201);
+    box-shadow: 0px 0px 3px #555;
+}
+.profile-images img {
+    width: 100%;
+    height: 100%;
+}
+.profile-title {
+    width: 600px;
+    margin: 0 auto;
+    background: rgb(219, 196, 201);
+    transform: rotate(-15deg) translateX(-50%);
+    box-shadow: 0px 0px 5px #ddd;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 55%;
+    bottom: 20%;
+}
+.profile-title h3 {
+    font-size: 30px;
+}
+.profile-title ul {
+    margin: 10px 0 ;
+}
+.profile-title li {
+    font-size: 14px;   
+    line-height: 1.6em;
+}
+.album {
+    text-align: center;
+    padding: 50px 0;
+}
+.album h2 {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: monoton;
+    color: #55acee;
+}
+.album hr {
+    margin: 45px auto;
+    width: 100px;
+    border: none;
+    height: 5px;
+    background: crimson;
+}
+.albumlist {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+.albumlist:before,
+.albumlist:after {
+    content: '';
+    position: absolute;
+    top: -3%;
+    left: -10%;
+    width: 40%;
+    transform: rotate(-30deg);
+    height: 1px;
+    background: #bbb;
+}
+.albumlist:before {
+    top: -3%;
+    left: -10%;
+    transform: rotate(-30deg);
+}
+.albumlist:after {
+    top: -3%;
+    left: 70%;
+    transform: rotate(30deg);
+
+}
+.albumlist > div {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #bbb;
+}
+.albumlist > div p {
+    float: left;
+    width: 50%;
+    border-right: 1px solid #bbb;
+}
+.albumlist > div span {
+    float: right;
+    width: 50%;
+}
+/* ################################ Artist TWICE ########################## */
+.artistjyp-title.artisttwice-title {
+    background: url(images/subpagetwicebg.jpg) no-repeat center center;
+}
+.artistjyp-title.artisttwice-title:before {
+    content:'TWICE';
+    position: absolute;
+    top: 10%;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 3px 3px 3px #55acee;
+}
+
+.artistjyp-profile.artisttwice-profile .profile-inner {
+    margin-bottom: 80px;
+    width: 42%;
+    display: inline-block;
+}
+/* ################################ Artist ITZY ########################## */
+
+.artistjyp-title.artistitzy-title {
+    background: url(images/subpageitzybg.jpg) no-repeat center center;
+}
+.artistjyp-title.artistitzy-title:before {
+    content:'ITZY';
+    position: absolute;
+    top: 10%;
+    left: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 3px 3px 3px #55acee;
+}
+
+/* ################################ i frame CSS ########################## */
+
+.featherlight .featherlight-content {
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: auto;
+    padding:0;
+    border-bottom: 25px solid transparent;
+    margin-left: 0;
+    margin-right: 0;
+    max-height: 100%;
+    background: #fff;
+    cursor: auto;
+    white-space: normal;
+    width: 100%;
+    height: 100%;
+  }
+  .featherlight iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  .featherlight .featherlight-close-icon {
+    position: absolute;
+    z-index: 9999;
+    top: 30px;
+    right: 70px;
+    line-height: 25px;
+    width: 25px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border: none;
+    font-size: 40px;
+    padding: 0;
+    outline: none;
+  }
