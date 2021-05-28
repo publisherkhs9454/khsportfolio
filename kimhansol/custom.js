@@ -4,7 +4,7 @@ $(function(){
         $(this).toggleClass('active')
         $('header').toggleClass('active')
     })
-    $('section').click(function(){
+    $('section, .gnb a').click(function(){
         $('.trigger, header').removeClass('active')
     })
     // HCJ Skill Section Iframe Modal //
